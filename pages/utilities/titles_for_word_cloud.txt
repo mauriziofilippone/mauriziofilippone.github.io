@@ -1,0 +1,60 @@
+evaluation of novelty~detection algorithms for discrete sequences
+deep Gaussian~processes autoencoders novelty~detection
+evaluation of novelty~detection algorithms: experiments and analyses
+statistical inference in mechanistic~models: time~warping for improved gradient~matching
+adaptive importance~sampling Gaussian~processes
+approximate parameter inference in systems~biology gradient~matching evaluation
+decoding post-stroke motor~function from brain~imaging
+Bayesian nonparametric disclosure~risk estimation mixed~effects log-linear~models
+learning interpretable rule~ensembles
+efficient approximate inference with variational~inference
+MCMC
+initialization variational~inference deep
+calibrated deep convolutional Gaussian~processes
+exact Gaussian~process regression with distributed~computations
+Dirichlet Gaussian~processes for large-scale calibrated classification
+constraining dynamics deep
+entropic trace estimation for log-determinants
+Bayesian inference of log-determinants
+variational~inference for Bayesian deep 
+deep compositional spatial~models
+variational~inference calibration of computer~models
+disease~progression models and prediction Gaussian~processes
+decoding post-stroke motor~function from structural~brain~imaging
+Bayesian nonparametric disclosure~risk estimation  mixed~effects log-linear models
+on user~availability prediction and network~application
+pseudo-marginal Bayesian inference for Gaussian~processes
+prediction conflict perception with Bayesian Gaussian~processes
+automated high~accuracy classifier of Parkinson disorder: a pattern~recognition 
+comparative evaluation of stochastic inference Gaussian~processes models
+aggregation algorithm  large-scale boolean network analysis 
+probabilistic prediction of neurological disorder with statistical assessment of neuroimaging data 
+approximate inference of the bandwidth in multivariate kernel density estimation 
+a perturbative  to novelty~detection in autoregressive models 
+population MCMC  for history~matching and uncertainty quantification 
+applying the possibilistic c-means algorithm in kernel space 
+simulated annealing for supervised gene selection 
+information~theoretic novelty~detection 
+non-metric dissimilarities in fuzzy central clustering algorithm 
+evaluation nonlinear dynamics  for time~series prediction 
+clustering in the membership embedding space 
+soft ranking in clustering 
+a survey of kernel and spectral  for clustering 
+practical learning of deep Gaussian~processes random~features
+exploring the capabilities and limitations of Gaussian~processes models
+Gaussian~processes for finding difference makers in personality impressions
+preconditioning kernel matrices
+fast inference in nonlinear dynamics systems gradient~matching
+MCMC for variational~inference sparse Gaussian~processes
+fast and reliable password~checking
+enabling scalable stochastic gradient inference for Gaussian~processes by the unbiased linear system solver
+Bayesian inference for Gaussian~processes classifier with annealing and pseudo-marginal MCMC
+pseudo-marginal Bayesian multiple-class multiple-kernel learning for neuroimaging data 
+ODE parameter inference adaptive gradient~matching with Gaussian~processes
+prediction the conflict~level in political~debates: crowdsourcing nonverbal~communication and Gaussian~processes
+from speech to personality: mapping voice~quality intonation personality difference
+detecting suspicious behavior in surveillance images 
+stability and performances in biclustering algorithm 
+an experimental comparison of kernel clustering 
+central clustering in kernel space
+

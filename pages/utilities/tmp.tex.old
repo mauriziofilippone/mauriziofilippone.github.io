@@ -1,0 +1,49 @@
+\documentclass[10pt]{article}
+\usepackage{fullpage, graphicx, url}
+\setlength{\parskip}{1ex}
+\setlength{\parindent}{0ex}
+\begin{document}
+\textbf{Journals}
+\begin{itemize}
+\item  C. Carota, M. Filippone, R. Leombruni, and S. Polettini. Bayesian nonparametric disclosure risk estimation via mixed effects log-linear models. \emph{Annals of Applied Statistics}
+, 9(1):525-546, 2015. [ bib | pdf | http ]  
+\item  M. Dell'Amico, M. Filippone, P. Michiardi, and Y. Roudier. On user availability prediction and network applications. \emph{IEEE Transactions on Networking}
+, 2014. [ bib | pdf | http ]  
+\item  M. Filippone and M. Girolami. Pseudo-marginal Bayesian inference for Gaussian processes. \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}
+, 36(11):2214-2226, 2014. [ bib | pdf | http ]  
+\item  S. Kim, F. Valente, M. Filippone, and A. Vinciarelli. Predicting continuous conflict perception with Bayesian Gaussian processes. \emph{IEEE Transactions on Affective Computing}
+, 5(2):187-200, 2014. [ bib | pdf | http ]  
+\item  A. F. Marquand, M. Filippone, J. Ashburner, M. Girolami, J. Mour\~ao-Miranda, G. J. Barker, S. C. R. Williams, P. N. Leigh, and C. R. V. Blain. Automated, High Accuracy Classification of Parkinsonian Disorders: A Pattern Recognition Approach. \emph{PLoS ONE}
+, 8(7):e69237+, 2013. [ bib | supplementary material | pdf | http ]  
+\item  M. Filippone, M. Zhong, and M. Girolami. A comparative evaluation of stochastic-based inference methods for Gaussian process models. \emph{Machine Learning}
+, 93(1):93-114, 2013. [ bib | pdf | http ]  
+\item  Y. Zhao, J. Kim, and M. Filippone. Aggregation algorithm towards large-scale boolean network analysis. \emph{IEEE Transactions on Automatic Control}
+, 58(8):1976-1985, 2013. [ bib | pdf | http ]  
+\item  M. Filippone, A. F. Marquand, C. R. V. Blain, S. C. R. Williams, J. Mour\~ao-Miranda, and M. Girolami. Probabilistic prediction of neurological disorders with a statistical assessment of neuroimaging data modalities. \emph{Annals of Applied Statistics}
+, 6(4):1883-1905, 2012. [ bib | pdf | http ]  
+\item  M. Filippone and G. Sanguinetti. Approximate inference of the bandwidth in multivariate kernel density estimation. \emph{Computational Statistics \& Data Analysis}
+, 55(12):3104-3122, 2011. [ bib | pdf | http ]  
+\item  M. Filippone and G. Sanguinetti. A perturbative approach to novelty detection in autoregressive models. \emph{IEEE Transactions on Signal Processing}
+, 59(3):1027-1036, 2011. [ bib | pdf | http ]  
+\item  L. Mohamed, B. Calderhead, M. Filippone, M. Christie, and M. Girolami. Population MCMC methods for history matching and uncertainty quantification. \emph{Computational Geosciences}
+, 16(2):423-436, 2012. [ bib | http ]  
+\item  M. Filippone, F. Masulli, and S. Rovetta. Applying the possibilistic c-means algorithm in kernel-induced spaces. \emph{IEEE Transactions on Fuzzy Systems}
+, 18(3):572-584, June 2010. [ bib | pdf | http ]  
+\item  M. Filippone, F. Masulli, and S. Rovetta. Simulated annealing for supervised gene selection. \emph{Soft Computing - A Fusion of Foundations, Methodologies and Applications}
+, 15:1471-1482, 2011. [ bib | http ]  
+\item  M. Filippone and G. Sanguinetti. Information theoretic novelty detection. \emph{Pattern Recognition}
+, 43(3):805-814, March 2010. [ bib | pdf | http ]  
+\item  M. Filippone. Dealing with non-metric dissimilarities in fuzzy central clustering algorithms. \emph{International Journal of Approximate Reasoning}
+, 50(2):363-384, February 2009. [ bib | pdf | http ]  
+\item  F. Camastra and M. Filippone. A comparative evaluation of nonlinear dynamics methods for time series prediction. \emph{Neural Computing and Applications}
+, 18(8):1021-1029, November 2009. [ bib | pdf | http ]  
+\item  M. Filippone, F. Masulli, and S. Rovetta. Clustering in the membership embedding space. \emph{International Journal of Knowledge Engineering and Soft Data Paradigms}
+, 4(1):363-375, 2009. [ bib ]  
+\item  S. Rovetta, F. Masulli, and M. Filippone. Soft ranking in clustering. \emph{Neurocomputing}
+, 72(7-9):2028-2031, March 2009. [ bib | pdf | http ]  
+\item  M. Filippone, F. Camastra, F. Masulli, and S. Rovetta. A survey of kernel and spectral methods for clustering. \emph{Pattern Recognition}
+, 41(1):176-190, January 2008. [ bib | Best Paper Award | pdf | http ] 
+
+\end{itemize}
+
+\end{document}

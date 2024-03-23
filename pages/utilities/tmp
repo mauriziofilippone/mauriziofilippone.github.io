@@ -1,0 +1,33 @@
+\begin{itemize}
+\item  M. Filippone and M. Girolami. Pseudo-marginal Bayesian inference for Gaussian processes. \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}
+, 36(11):2214--2226, 2014. [ bib | pdf | http ] 
+\item  M. Filippone, M. Zhong, and M. Girolami. A comparative evaluation of stochastic-based inference methods for Gaussian process models. \emph{Machine Learning}
+, 93(1):93--114, 2013. [ bib | pdf | http ] 
+\item  M. Filippone, A. F. Marquand, C. R. V. Blain, S. C. R. Williams, J. Mour\~ao-Miranda, and M. Girolami. Probabilistic prediction of neurological disorders with a statistical assessment of neuroimaging data modalities. \emph{Annals of Applied Statistics}
+, 6(4):1883--1905, 2012. [ bib | pdf | http ] 
+\item  M. Filippone and G. Sanguinetti. Approximate inference of the bandwidth in multivariate kernel density estimation. \emph{Computational Statistics \& Data Analysis}
+, 55(12):3104--3122, 2011. [ bib | pdf | http ] 
+\item  M. Filippone and G. Sanguinetti. A perturbative approach to novelty detection in autoregressive models. \emph{IEEE Transactions on Signal Processing}
+, 59(3):1027--1036, 2011. [ bib | pdf | http ] 
+\item  M. Filippone, F. Masulli, and S. Rovetta. Applying the possibilistic c-means algorithm in kernel-induced spaces. \emph{IEEE Transactions on Fuzzy Systems}
+, 18(3):572--584, June 2010. [ bib | pdf | http ] 
+\item  M. Filippone and G. Sanguinetti. Information theoretic novelty detection. \emph{Pattern Recognition}
+, 43(3):805--814, March 2010. [ bib | pdf | http ] 
+\item  M. Filippone. Dealing with non-metric dissimilarities in fuzzy central clustering algorithms. \emph{International Journal of Approximate Reasoning}
+, 50(2):363--384, February 2009. [ bib | pdf | http ] 
+\item  M. Filippone, F. Camastra, F. Masulli, and S. Rovetta. A survey of kernel and spectral methods for clustering. \emph{Pattern Recognition}
+, 41(1):176--190, January 2008. [ bib | Best Paper Award | pdf | http ] 
+\item  K. Cutajar, E. V. Bonilla, P. Michiardi, and M. Filippone. Random feature expansions for deep Gaussian processes. In \emph{Proceedings of the 34th International Conference on Machine Learning, ICML 2017, Sydney, Australia, August 6-11, 2017}
+, 2017. [ bib | pdf ] 
+\item  K. Cutajar, M. A. Osborne, J. P. Cunningham, and M. Filippone. Preconditioning kernel matrices. In \emph{Proceedings of the 33rd International Conference on Machine Learning, ICML 2016, New York City, USA, June 19-24, 2016}
+, 2016. [ bib | pdf ] 
+\item  J. Hensman, A. G. de G. Matthews, M. Filippone, and Z. Ghahramani. MCMC for variationally sparse Gaussian processes. In \emph{Advances in Neural Information Processing Systems 28: Annual Conference on Neural Information Processing Systems 2015, December 7-12 2015, Montreal, Quebec, Canada}
+, 2015. [ bib | pdf ] 
+\item  M. Filippone and R. Engler. Enabling scalable stochastic gradient-based inference for Gaussian processes by employing the Unbiased LInear System SolvEr (ULISSE). In \emph{Proceedings of the 32nd International Conference on Machine Learning, ICML 2015, Lille, France, July 6-11, 2015}
+, 2015. [ bib | pdf ] 
+\item  F. Dondelinger, M. Filippone, S. Rogers, and D. Husmeier. ODE parameter inference using adaptive gradient matching with Gaussian processes. In \emph{AISTATS}
+, 2013. [ bib | pdf ] 
+
+\end{itemize}
+
+\end{document}
