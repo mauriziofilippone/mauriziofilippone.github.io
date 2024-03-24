@@ -30,9 +30,9 @@ Kingdom of Saudi Arabia
 
 <p> 
 
-<p> <b>Office</b>: 4298
+<p> <b>Office</b>: 1-4112
 
-<!-- <p> <b>Phone</b>: +966 -->
+<p> <b>Phone</b>: +966 12 808 7216
 
 <p>
 <b>Email Address</b>: maurizio.filippone&nbsp;[at]&nbsp;kaust.edu.sa
@@ -51,7 +51,7 @@ Apply here
 
 <p>
 <b>&nbsp;- Research Technician/Specialist in Bayesian Deep Learning</b>:
-<a href="http://apply.interfolio.com/142696" target="_blank">
+<a href="http://apply.interfolio.com/142698" target="_blank">
 Apply here
 </a>
 
