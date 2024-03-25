@@ -44,7 +44,7 @@ $menu['links'] = 'Links';
 <div id="titlecontainer">
 
 <div id="title_img">
-  <a href="http://www.eurecom.fr/en/" target="_blank">
+  <a href="https://www.kaust.edu.sa/en/" target="_blank">
   <img id="imglogo" src="<?php echo $root;?>/layout/logoKAUST.png" alt="Logo KAUST">
   </a>
 </div>
