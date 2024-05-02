@@ -1,23 +1,23 @@
 export TMPDIR=.
 
-JOURNALSYEARS=(2023 2022 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008)
+JOURNALSYEARS=(2024 2023 2022 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008)
 CONFERENCESYEARS=(2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2008 2007 2006 2005 2004)
 TECHREPYEARS=(2021 2020 2019 2018 2017 2016 2015 2013 2012 2009 2007 2006)
 
 for i in ${JOURNALSYEARS[*]}; do 
-	bib2bib --no-comment -oc ZZ/trash -ob "ZZ/journals$i.bib" -c "year=$i" journals.bib;
-	bibtex2html -s abbrv -nobibsource -nokeys -noheader -nofooter -nodoc -citefile citefileWEB -nf url "link" -nf pdf "pdf" -nf code "code" -nf pdfsup "supplementary material" -nf award "Best Paper Award" "ZZ/journals$i.bib";
+	./bib2bib --no-comment -oc ZZ/trash -ob "ZZ/journals$i.bib" -c "year=$i" journals.bib;
+	./bibtex2html -s abbrv -nobibsource -nokeys -noheader -nofooter -nodoc -citefile citefileWEB -nf url "link" -nf pdf "pdf" -nf code "code" -nf pdfsup "supplementary material" -nf award "Best Paper Award" "ZZ/journals$i.bib";
 done
 for i in ${CONFERENCESYEARS[*]}; do 
-	bib2bib --no-comment -oc ZZ/trash -ob "ZZ/conferences$i.bib" -c "year=$i" conferences.bib;
-	bibtex2html -s abbrv -nobibsource -nokeys -noheader -nofooter -nodoc -citefile citefileWEB -nf url "link" -nf pdf "pdf" -nf code "code" -nf pdfsup "supplementary material" -nf award "Best Paper Award" "ZZ/conferences$i.bib";
+	./bib2bib --no-comment -oc ZZ/trash -ob "ZZ/conferences$i.bib" -c "year=$i" conferences.bib;
+	./bibtex2html -s abbrv -nobibsource -nokeys -noheader -nofooter -nodoc -citefile citefileWEB -nf url "link" -nf pdf "pdf" -nf code "code" -nf pdfsup "supplementary material" -nf award "Best Paper Award" "ZZ/conferences$i.bib";
 done    
-bibtex2html -s abbrv -nokeys -nobibsource -noheader -nofooter -nodoc -citefile citefileWEB -nf url "link" -nf pdf "pdf" -nf code "code" discussions.bib
+./bibtex2html -s abbrv -nokeys -nobibsource -noheader -nofooter -nodoc -citefile citefileWEB -nf url "link" -nf pdf "pdf" -nf code "code" discussions.bib
 #for i in ${TECHREPYEARS[*]}; do 
 #	bib2bib --no-comment -oc ZZ/trash -ob "ZZ/techrep$i.bib" -c "year=$i" techrep.bib;
 #	bibtex2html -s abbrv -nokeys -noheader -nofooter -nodoc -citefile citefileWEB -nf pdf "pdf" -nf code "code" -nf pdfsup "supplementary material" -nf award "Best Paper Award" "ZZ/techrep$i.bib";
 #done    
-bibtex2html -s abbrv -nokeys -nobibsource -noheader -nofooter -nodoc -citefile citefileWEB -nf url "link" -nf pdf "pdf" -nf code "code" theses.bib
+./bibtex2html -s abbrv -nokeys -nobibsource -noheader -nofooter -nodoc -citefile citefileWEB -nf url "link" -nf pdf "pdf" -nf code "code" theses.bib
 # bibtex2html -s abbrv -nokeys -noheader -nofooter -nodoc -citefile citefileWEB -nf pdf "pdf" -nf code "code" magazines.bib
 
 
