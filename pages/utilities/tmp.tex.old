@@ -5,44 +5,217 @@
 \begin{document}
 \textbf{Journals}
 \begin{itemize}
-\item  C.†Carota, M.†Filippone, R.†Leombruni, and S.†Polettini. Bayesian nonparametric disclosure risk estimation via mixed effects log-linear models. \emph{Annals of Applied Statistics}
-, 9(1):525-546, 2015. [†bib†| pdf†| http†]  
-\item  M.†Dell'Amico, M.†Filippone, P.†Michiardi, and Y.†Roudier. On user availability prediction and network applications. \emph{IEEE Transactions on Networking}
-, 2014. [†bib†| pdf†| http†]  
-\item  M.†Filippone and M.†Girolami. Pseudo-marginal Bayesian inference for Gaussian processes. \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}
-, 36(11):2214-2226, 2014. [†bib†| pdf†| http†]  
-\item  S.†Kim, F.†Valente, M.†Filippone, and A.†Vinciarelli. Predicting continuous conflict perception with Bayesian Gaussian processes. \emph{IEEE Transactions on Affective Computing}
-, 5(2):187-200, 2014. [†bib†| pdf†| http†]  
-\item  A.†F. Marquand, M.†Filippone, J.†Ashburner, M.†Girolami, J.†Mour\~ao-Miranda, G.†J. Barker, S.†C.†R. Williams, P.†N. Leigh, and C.†R.†V. Blain. Automated, High Accuracy Classification of Parkinsonian Disorders: A Pattern Recognition Approach. \emph{PLoS ONE}
-, 8(7):e69237+, 2013. [†bib†| supplementary material†| pdf†| http†]  
-\item  M.†Filippone, M.†Zhong, and M.†Girolami. A comparative evaluation of stochastic-based inference methods for Gaussian process models. \emph{Machine Learning}
-, 93(1):93-114, 2013. [†bib†| pdf†| http†]  
-\item  Y.†Zhao, J.†Kim, and M.†Filippone. Aggregation algorithm towards large-scale boolean network analysis. \emph{IEEE Transactions on Automatic Control}
-, 58(8):1976-1985, 2013. [†bib†| pdf†| http†]  
-\item  M.†Filippone, A.†F. Marquand, C.†R.†V. Blain, S.†C.†R. Williams, J.†Mour\~ao-Miranda, and M.†Girolami. Probabilistic prediction of neurological disorders with a statistical assessment of neuroimaging data modalities. \emph{Annals of Applied Statistics}
-, 6(4):1883-1905, 2012. [†bib†| pdf†| http†]  
-\item  M.†Filippone and G.†Sanguinetti. Approximate inference of the bandwidth in multivariate kernel density estimation. \emph{Computational Statistics \& Data Analysis}
-, 55(12):3104-3122, 2011. [†bib†| pdf†| http†]  
-\item  M.†Filippone and G.†Sanguinetti. A perturbative approach to novelty detection in autoregressive models. \emph{IEEE Transactions on Signal Processing}
-, 59(3):1027-1036, 2011. [†bib†| pdf†| http†]  
-\item  L.†Mohamed, B.†Calderhead, M.†Filippone, M.†Christie, and M.†Girolami. Population MCMC methods for history matching and uncertainty quantification. \emph{Computational Geosciences}
-, 16(2):423-436, 2012. [†bib†| http†]  
-\item  M.†Filippone, F.†Masulli, and S.†Rovetta. Applying the possibilistic c-means algorithm in kernel-induced spaces. \emph{IEEE Transactions on Fuzzy Systems}
-, 18(3):572-584, June 2010. [†bib†| pdf†| http†]  
-\item  M.†Filippone, F.†Masulli, and S.†Rovetta. Simulated annealing for supervised gene selection. \emph{Soft Computing - A Fusion of Foundations, Methodologies and Applications}
-, 15:1471-1482, 2011. [†bib†| http†]  
-\item  M.†Filippone and G.†Sanguinetti. Information theoretic novelty detection. \emph{Pattern Recognition}
-, 43(3):805-814, March 2010. [†bib†| pdf†| http†]  
-\item  M.†Filippone. Dealing with non-metric dissimilarities in fuzzy central clustering algorithms. \emph{International Journal of Approximate Reasoning}
-, 50(2):363-384, February 2009. [†bib†| pdf†| http†]  
-\item  F.†Camastra and M.†Filippone. A comparative evaluation of nonlinear dynamics methods for time series prediction. \emph{Neural Computing and Applications}
-, 18(8):1021-1029, November 2009. [†bib†| pdf†| http†]  
-\item  M.†Filippone, F.†Masulli, and S.†Rovetta. Clustering in the membership embedding space. \emph{International Journal of Knowledge Engineering and Soft Data Paradigms}
-, 4(1):363-375, 2009. [†bib†]  
-\item  S.†Rovetta, F.†Masulli, and M.†Filippone. Soft ranking in clustering. \emph{Neurocomputing}
-, 72(7-9):2028-2031, March 2009. [†bib†| pdf†| http†]  
-\item  M.†Filippone, F.†Camastra, F.†Masulli, and S.†Rovetta. A survey of kernel and spectral methods for clustering. \emph{Pattern Recognition}
-, 41(1):176-190, January 2008. [†bib†| Best Paper Award†| pdf†| http†] 
+2024\item  J. Wacker, M. Kanagawa, and M. Filippone. Improved random features for dot product kernels. \emph{Journal of Machine Learning Research}
+, 25(235):1-75, 2024. [ link ] 
+\item  A. Zammit-Mangion, M. D. Kaminski, B.-H. Tran, M. Filippone, and N. Cressie. Spatial Bayesian neural networks. \emph{Spatial Statistics}
+, 60:100825, 2024. [ link ] 2023
+\item  G. Franzese, S. Rossi, L. Yang, A. Finamore, D. Rossi, M. Filippone, and P. Michiardi. How much is enough? a study on diffusion times in score-based generative models. \emph{Entropy}
+, 25(4), 2023. [ link ] 2022
+\item  B.-H. Tran, S. Rossi, D. Milios, and M. Filippone. All you need is a good functional prior for Bayesian deep learning. \emph{Journal of Machine Learning Research}
+, 23(74):1-56, 2022. [ link ] 
+\item  S. Marmin and M. Filippone. Deep Gaussian Processes for Calibration of Computer Models (with Discussion). \emph{Bayesian Analysis}
+, 17(4):1301 - 1350, 2022. [ link ] 
+\item  C. Carota, M. Filippone, and S. Polettini. Assessing Bayesian semi-parametric log-linear models: An application to disclosure risk estimation. \emph{International Statistical Review}
+, 90(1):165-183, 2022. [ link ] 
+\item  Q. V. Andrew Zammit-Mangion, Tin Lok James Ng and M. Filippone. Deep compositional spatial models. \emph{Journal of the American Statistical Association}
+, 117(540):1787-1808, 2022. [ link ] 2020
+\item  R. Domingues, P. Michiardi, J. Barlet, and M. Filippone. A comparative evaluation of novelty detection algorithms for discrete sequences. \emph{Artificial Intelligence Review}
+, 53:3787-3812, 2020. [ link ] 2019
+\item  M. Lorenzi, M. Filippone, G. B. Frisoni, D. C. Alexander, and S. Ourselin. Probabilistic disease progression modeling to characterize diagnostic uncertainty: Application to staging and prediction in alzheimer's disease. \emph{NeuroImage}
+, 190:56-68, 2019. [ link ] 2018
+\item  R. Domingues, P. Michiardi, J. Zouaoui, and M. Filippone. Deep Gaussian Process autoencoders for novelty detection. \emph{Machine Learning}
+, 107(8-10):1363-1383, 2018. [ link ] 
+\item  R. Domingues, M. Filippone, P. Michiardi, and J. Zouaoui. A comparative evaluation of outlier detection algorithms: Experiments and analyses. \emph{Pattern Recognition}
+, 74:406-421, 2018. [ link ] 2017
+\item  M. Niu, B. Macdonald, S. Rogers, M. Filippone, and D. Husmeier. Statistical inference in mechanistic models: time warping for improved gradient matching. \emph{Computational Statistics}
+, pages 1-33, 8 2017. [ link ] 
+\item  X. Xiong, V. ≈†m\'{\i}dl, and M. Filippone. Adaptive multiple importance sampling for Gaussian processes. \emph{Journal of Statistical Computation and Simulation}
+, 87(8):1644-1665, 2017. [ link ] 2016
+\item  B. Macdonald, M. Niu, S. Rogers, M. Filippone, and D. Husmeier. Approximate parameter inference in systems biology using gradient matching: a comparative evaluation. \emph{BioMedical Engineering OnLine}
+, 15(Suppl 1):80, 7 2016. [ link ] 
+\item  J. M. Rondina, M. Filippone, M. Girolami, and N. S. Ward. Decoding post-stroke motor function from structural brain imaging. \emph{NeuroImage: Clinical}
+, 12:372-380, 2016. [ link ] 2015
+\item  C. Carota, M. Filippone, R. Leombruni, and S. Polettini. Bayesian nonparametric disclosure risk estimation via mixed effects log-linear models. \emph{Annals of Applied Statistics}
+, 9(1):525-546, 2015. [ link ] 
+\item  M. Dell'Amico, M. Filippone, P. Michiardi, and Y. Roudier. On user availability prediction and network applications. \emph{IEEE/ACM Transactions on Networking}
+, 23(4):1300-1313, Aug 2015. [ link ] 2014
+\item  M. Filippone and M. Girolami. Pseudo-marginal Bayesian inference for Gaussian processes. \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}
+, 36(11):2214-2226, 2014. [ link ] 
+\item  S. Kim, F. Valente, M. Filippone, and A. Vinciarelli. Predicting continuous conflict perception with Bayesian Gaussian processes. \emph{IEEE Transactions on Affective Computing}
+, 5(2):187-200, 2014. [ link ] 2013
+\item  A. F. Marquand, M. Filippone, J. Ashburner, M. Girolami, J. Mour\~ao-Miranda, G. J. Barker, S. C. R. Williams, P. N. Leigh, and C. R. V. Blain. Automated, High Accuracy Classification of Parkinsonian Disorders: A Pattern Recognition Approach. \emph{PLoS ONE}
+, 8(7):e69237+, 2013. [ link ] 
+\item  M. Filippone, M. Zhong, and M. Girolami. A comparative evaluation of stochastic-based inference methods for Gaussian process models. \emph{Machine Learning}
+, 93(1):93-114, 2013. [ link ] 
+\item  Y. Zhao, J. Kim, and M. Filippone. Aggregation algorithm towards large-scale boolean network analysis. \emph{IEEE Transactions on Automatic Control}
+, 58(8):1976-1985, 2013. [ link ] 2012
+\item  M. Filippone, A. F. Marquand, C. R. V. Blain, S. C. R. Williams, J. Mour\~ao-Miranda, and M. Girolami. Probabilistic prediction of neurological disorders with a statistical assessment of neuroimaging data modalities. \emph{Annals of Applied Statistics}
+, 6(4):1883-1905, 2012. [ link ] 
+\item  L. Mohamed, B. Calderhead, M. Filippone, M. Christie, and M. Girolami. Population MCMC methods for history matching and uncertainty quantification. \emph{Computational Geosciences}
+, 16(2):423-436, 2012. [ link ] 2011
+\item  M. Filippone and G. Sanguinetti. Approximate inference of the bandwidth in multivariate kernel density estimation. \emph{Computational Statistics \& Data Analysis}
+, 55(12):3104-3122, 2011. [ link ] 
+\item  M. Filippone and G. Sanguinetti. A perturbative approach to novelty detection in autoregressive models. \emph{IEEE Transactions on Signal Processing}
+, 59(3):1027-1036, 2011. [ link ] 
+\item  M. Filippone, F. Masulli, and S. Rovetta. Simulated annealing for supervised gene selection. \emph{Soft Computing - A Fusion of Foundations, Methodologies and Applications}
+, 15:1471-1482, 2011. [ link ] 2010
+\item  M. Filippone, F. Masulli, and S. Rovetta. Applying the possibilistic c-means algorithm in kernel-induced spaces. \emph{IEEE Transactions on Fuzzy Systems}
+, 18(3):572-584, June 2010. [ link ] 
+\item  M. Filippone and G. Sanguinetti. Information theoretic novelty detection. \emph{Pattern Recognition}
+, 43(3):805-814, March 2010. [ link ] 2009
+\item  M. Filippone. Dealing with non-metric dissimilarities in fuzzy central clustering algorithms. \emph{International Journal of Approximate Reasoning}
+, 50(2):363-384, February 2009. [ link ] 
+\item  F. Camastra and M. Filippone. A comparative evaluation of nonlinear dynamics methods for time series prediction. \emph{Neural Computing and Applications}
+, 18(8):1021-1029, November 2009. [ link ] 
+\item  M. Filippone, F. Masulli, and S. Rovetta. Clustering in the membership embedding space. \emph{International Journal of Knowledge Engineering and Soft Data Paradigms}
+, 4(1):363-375, 2009. 
+\item  S. Rovetta, F. Masulli, and M. Filippone. Soft ranking in clustering. \emph{Neurocomputing}
+, 72(7-9):2028-2031, March 2009. [ link ] 2008
+\item  M. Filippone, F. Camastra, F. Masulli, and S. Rovetta. A survey of kernel and spectral methods for clustering. \emph{Pattern Recognition}
+, 41(1):176-190, January 2008. [ Best Paper Award | link ] 
+
+\end{itemize}
+\textbf{Conferences}
+\begin{itemize}
+2025\item  M. Heinonen, B.-H. Tran, M. Kampffmeyer, and M. Filippone. Robust classification by coupling data mollification with label smoothing. In \emph{The 28th International Conference on Artificial Intelligence and Statistics}
+, 2025. [ link ] 
+\item  A. Lh\'eritier and M. Filippone. Unconditionally calibrated priors for beta mixture density networks. In \emph{The 28th International Conference on Artificial Intelligence and Statistics}
+, 2025. [ link ] 
+\item  A. Benechehab, Y. A. E. Hili, A. Odonnat, O. Zekri, A. Thomas, G. Paolo, M. Filippone, I. Redko, and B. K\'egl. Zero-shot model-based reinforcement learning using large language models. In \emph{The Thirteenth International Conference on Learning Representations}
+, 2025. [ link ] 2024
+\item  T. Papamarkou, M. Skoularidou, K. Palla, L. Aitchison, J. Arbel, D. Dunson, M. Filippone, V. Fortuin, P. Hennig, J. M. Hern\'andez-Lobato, A. Hubin, A. Immer, T. Karaletsos, M. E. Khan, A. Kristiadi, Y. Li, S. Mandt, C. Nemeth, M. A. Osborne, T. G. J. Rudner, D. R\"ugamer, Y. W. Teh, M. Welling, A. G. Wilson, and R. Zhang. Position: Bayesian deep learning is needed in the age of large-scale AI. In R. Salakhutdinov, Z. Kolter, K. Heller, A. Weller, N. Oliver, J. Scarlett, and F. Berkenkamp, editors, \emph{Proceedings of the 41st International Conference on Machine Learning}
+, volume 235 of \emph{Proceedings of Machine Learning Research}
+, pages 39556-39586. PMLR, 21-27 Jul 2024. [ pdf | link ] 2023
+\item  B.-H. Tran, G. Franzese, P. Michiardi, and M. Filippone. One-line-of-code data mollification improves optimization of likelihood-based generative models. In A. Oh, T. Neumann, A. Globerson, K. Saenko, M. Hardt, and S. Levine, editors, \emph{Advances in Neural Information Processing Systems}
+, volume 36, pages 6545-6567. Curran Associates, Inc., 2023. [ link ] 
+\item  G. Franzese, G. Corallo, S. Rossi, M. Heinonen, M. Filippone, and P. Michiardi. Continuous-time functional diffusion processes. In A. Oh, T. Neumann, A. Globerson, K. Saenko, M. Hardt, and S. Levine, editors, \emph{Advances in Neural Information Processing Systems}
+, volume 36, pages 37370-37400. Curran Associates, Inc., 2023. [ link ] 
+\item  J. Wacker, R. Ohana, and M. Filippone. Complex-to-real sketches for tensor products with applications to the polynomial kernel. In F. Ruiz, J. Dy, and J.-W. van de Meent, editors, \emph{Proceedings of The 26th International Conference on Artificial Intelligence and Statistics}
+, volume 206 of \emph{Proceedings of Machine Learning Research}
+, pages 5181-5212. PMLR, 25-27 Apr 2023. [ link ] 2022
+\item  G. Franzese, D. Milios, M. Filippone, and P. Michiardi. Revisiting the effects of stochasticity for Hamiltonian samplers. In K. Chaudhuri, S. Jegelka, L. Song, C. Szepesvari, G. Niu, and S. Sabato, editors, \emph{Proceedings of the 39th International Conference on Machine Learning}
+, volume 162 of \emph{Proceedings of Machine Learning Research}
+, pages 6744-6778. PMLR, 17-23 Jul 2022. [ link ] 2021
+\item  B.-H. Tran, S. Rossi, D. Milios, P. Michiardi, E. V. Bonilla, and M. Filippone. Model selection for Bayesian autoencoders. In A. Beygelzimer, Y. Dauphin, P. Liang, and J. W. Vaughan, editors, \emph{Advances in Neural Information Processing Systems}
+, 2021. [ link ] 
+\item  G.-L. Tran, D. Milios, P. Michiardi, and M. Filippone. Sparse within Sparse Gaussian Processes using Neighbor Information. In M. Meila and T. Zhang, editors, \emph{Proceedings of the 38th International Conference on Machine Learning}
+, volume 139 of \emph{Proceedings of Machine Learning Research}
+, pages 10369-10378. PMLR, 18-24 Jul 2021. [ link ] 
+\item  G. Mita, M. Filippone, and P. Michiardi. An Identifiable Double VAE For Disentangled Representations. In M. Meila and T. Zhang, editors, \emph{Proceedings of the 38th International Conference on Machine Learning}
+, volume 139 of \emph{Proceedings of Machine Learning Research}
+, pages 7769-7779. PMLR, 18-24 Jul 2021. [ link ] 
+\item  S. Rossi, M. Heinonen, E. Bonilla, Z. Shen, and M. Filippone. Sparse Gaussian Processes Revisited: Bayesian Approaches to Inducing-Variable Approximations. In A. Banerjee and K. Fukumizu, editors, \emph{Proceedings of The 24th International Conference on Artificial Intelligence and Statistics}
+, volume 130 of \emph{Proceedings of Machine Learning Research}
+, pages 1837-1845. PMLR, 13-15 Apr 2021. [ link ] 2020
+\item  S. Rossi, S. Marmin, and M. Filippone. Walsh-Hadamard variational inference for Bayesian deep learning. In H. Larochelle, M. Ranzato, R. Hadsell, M. Balcan, and H. Lin, editors, \emph{Advances in Neural Information Processing Systems}
+, volume 33, pages 9674-9686. Curran Associates, Inc., 2020. [ link ] 
+\item  G. Mita, P. Papotti, M. Filippone, and P. Michiardi. LIBRE: Learning Interpretable Boolean Rule Ensembles. In \emph{AISTATS 2020, Palermo, Italy}
+, 2020. [ link ] 2019
+\item  S. Rossi, S. Marmin, and M. Filippone. Efficient approximate inference with walsh-hadamard variational inference. In \emph{Bayesian Deep Learning Workshop, NeurIPS}
+, 2019. [ link ] 
+\item  C. Nemeth, F. Lindsten, M. Filippone, and J. Hensman. Pseudo-extended Markov chain Monte Carlo. In \emph{Advances in Neural Information Processing Systems 32: Annual Conference on Neural Information Processing Systems 2019, 9-12 December 2019, Vancouver, British Columbia, Canada}
+, 2019. [ link ] 
+\item  S. Rossi, P. Michiardi, and M. Filippone. Good Initializations of Variational Bayes for Deep Models. In \emph{Proceedings of the 36th International Conference on Machine Learning, ICML 2019, Long Beach, USA, 2019}
+, 2019. [ link ] 
+\item  G.-L. Tran, E. V. Bonilla, J. P. Cunningham, P. Michiardi, and M. Filippone. Calibrating Deep Convolutional Gaussian Processes. In \emph{AISTATS 2019, Naha, Japan, 2019}
+, 2019. [ link ] 
+\item  D. Nguyen, M. Filippone, and P. Michiardi. Exact Gaussian process regression with distributed computations. In C. Hung and G. A. Papadopoulos, editors, \emph{Proceedings of the 34th ACM/SIGAPP Symposium on Applied Computing, SAC 2019, Limassol, Cyprus, April 8-12, 2019}
+, pages 1286-1295. ACM, 2019. [ link ] 2018
+\item  D. Milios, R. Camoriano, P. Michiardi, L. Rosasco, and M. Filippone. Dirichlet-based Gaussian Processes for Large-scale Calibrated Classification. In \emph{Advances in Neural Information Processing Systems 31: Annual Conference on Neural Information Processing Systems 2018, December 3-7 2018, Montreal, Quebec, Canada}
+, 2018. [ link ] 
+\item  M. Lorenzi and M. Filippone. Constraining the Dynamics of Deep Probabilistic Models. In \emph{Proceedings of the 35th International Conference on Machine Learning, ICML 2018, Stockholm, Sweden, 2018}
+, 2018. [ link ] 2017
+\item  J. Fitzsimons, D. Granziol, K. Cutajar, M. Osborne, M. Filippone, and S. Roberts. Entropic Trace Estimates for Log Determinants. In \emph{Machine Learning and Knowledge Discovery in Databases - European Conference, ECML PKDD 2017, Skopje, Macedonia, September 18-22, 2017}
+, 2017. [ link ] 
+\item  J. Fitzsimons, K. Cutajar, M. Osborne, S. Roberts, and M. Filippone. Bayesian Inference of Log Determinants. In \emph{Thirty-Third Conference on Uncertainty in Artificial Intelligence, UAI 2017, August 11-15, 2017, Sydney, Australia}
+, 2017. [ link ] 
+\item  K. Krauth, E. V. Bonilla, K. Cutajar, and M. Filippone. AutoGP: Exploring the capabilities and limitations of Gaussian process models. In \emph{Thirty-Third Conference on Uncertainty in Artificial Intelligence, UAI 2017, August 11-15, 2017, Sydney, Australia}
+, 2017. [ link ] 
+\item  K. Cutajar, E. V. Bonilla, P. Michiardi, and M. Filippone. Random feature expansions for deep Gaussian processes. In \emph{Proceedings of the 34th International Conference on Machine Learning, ICML 2017, Sydney, Australia, August 6-11, 2017}
+, 2017. 
+\item  Y. Han and M. Filippone. Mini-batch spectral clustering. In \emph{2016 International Joint Conference on Neural Networks, IJCNN 2017, Anchorage, AK, USA, May 14-19, 2017}
+. IEEE, 2017. 2016
+\item  K. Cutajar, E. V. Bonilla, P. Michiardi, and M. Filippone. Accelerating deep Gaussian processes inference with arc-cosine kernels. In \emph{Bayesian Deep Learning Workshop, NIPS}
+, 2016. [ link ] 
+\item  X. Xiong, M. Filippone, and A. Vinciarelli. Looking good with flickr faves: Gaussian processes for finding difference makers in personality impressions. In \emph{ACM Multimedia}
+, 2016. 
+\item  K. Cutajar, M. A. Osborne, J. P. Cunningham, and M. Filippone. Preconditioning kernel matrices. In \emph{Proceedings of the 33rd International Conference on Machine Learning, ICML 2016, New York City, USA, June 19-24, 2016}
+, 2016. 
+\item  M. Niu, S. Rogers, M. Filippone, and D. Husmeier. Fast inference in nonlinear dynamical systems using gradient matching. In \emph{Proceedings of the 33rd International Conference on Machine Learning, ICML 2016, New York City, USA, June 19-24, 2016}
+, 2016. 2015
+\item  J. Hensman, A. G. de G. Matthews, M. Filippone, and Z. Ghahramani. MCMC for variationally sparse Gaussian processes. In \emph{Advances in Neural Information Processing Systems 28: Annual Conference on Neural Information Processing Systems 2015, December 7-12 2015, Montreal, Quebec, Canada}
+, 2015. 
+\item  M. Dell'Amico and M. Filippone. Monte Carlo strength evaluation: Fast and reliable password checking. In \emph{Proceedings of the 22nd ACM Conference on Computer and Communications Security}
+, 2015. 
+\item  M. Filippone and R. Engler. Enabling scalable stochastic gradient-based inference for Gaussian processes by employing the Unbiased LInear System SolvEr (ULISSE). In \emph{Proceedings of the 32nd International Conference on Machine Learning, ICML 2015, Lille, France, July 6-11, 2015}
+, 2015. 2014
+\item  M. Filippone. Bayesian inference for Gaussian process classifiers with annealing and pseudo-marginal MCMC. In \emph{22nd International Conference on Pattern Recognition, ICPR 2014, Stockholm, Sweden, August 24-28, 2014}
+, pages 614-619, 2014. [ link ] 
+\item  A. D. O'Harney, A. Marquand, K. Rubia, K. Chantiluke, A. B. Smith, A. Cubillo, C. Blain, and M. Filippone. Pseudo-marginal Bayesian multiple-class multiple-kernel learning for neuroimaging data. In \emph{22nd International Conference on Pattern Recognition, ICPR 2014, Stockholm, Sweden, August 24-28, 2014}
+, pages 3185-3190, 2014. [ link ] 2013
+\item  F. Dondelinger, M. Filippone, S. Rogers, and D. Husmeier. ODE parameter inference using adaptive gradient matching with Gaussian processes. In \emph{AISTATS}
+, 2013. 2012
+\item  S. Kim, M. Filippone, F. Valente, and A. Vinciarelli. Predicting the conflict level in television political debates: an approach based on crowdsourcing, nonverbal communication and Gaussian processes. In \emph{Proceedings of the 20th ACM Multimedia Conference, MM '12, Nara, Japan, October 29 - November 02, 2012}
+, pages 793-796. ACM, 2012. [ link ] 
+\item  G. Mohammadi, A. Origlia, M. Filippone, and A. Vinciarelli. From speech to personality: mapping voice quality and intonation into personality differences. In \emph{Proceedings of the 20th ACM Multimedia Conference, MM '12, Nara, Japan, October 29 - November 02, 2012}
+, pages 789-792. ACM, 2012. [ link ] 2008
+\item  D. Barbar\'a, C. Domeniconi, Z. Duric, M. Filippone, R. Mansfield, and E. Lawson. Detecting suspicious behavior in surveillance images. In \emph{Workshops Proceedings of the 8th IEEE International Conference on Data Mining (ICDM 2008), December 15-19, 2008, Pisa, Italy}
+, pages 891-900. IEEE, 2008. [ link ] 
+\item  M. Filippone, F. Masulli, and S. Rovetta. Stability and performances in biclustering algorithms. In \emph{Computational Intelligence Methods for Bioinformatics and Biostatistics, 5th International Meeting, CIBB 2008, Vietri sul Mare, Italy, October 3-4, 2008, Revised Selected Papers}
+, volume 5488 of \emph{Lecture Notes in Computer Science}
+, pages 91-101. Springer, 2008. [ link ] 
+\item  M. Filippone, F. Masulli, and S. Rovetta. An experimental comparison of kernel clustering methods. In \emph{New Directions in Neural Networks - 18th Italian Workshop on Neural Networks: WIRN 2008, Vietri sul Mare, Italy, May 22-24, 2008, Revised Selected Papers}
+, volume 193 of \emph{Frontiers in Artificial Intelligence and Applications}
+, pages 118-126. IOS Press, 2008. [ link ] 2007
+\item  F. Camastra and M. Filippone. SVM-based time series prediction with nonlinear dynamics methods. In \emph{Knowledge-Based Intelligent Information and Engineering Systems, 11th International Conference, KES 2007, XVII Italian Workshop on Neural Networks, Vietri sul Mare, Italy, September 12-14, 2007, Proceedings, Part III}
+, volume 4694 of \emph{Lecture Notes in Computer Science}
+, pages 300-307. Springer, 2007. [ link ] 
+\item  S. Rovetta, F. Masulli, and M. Filippone. Membership embedding space approach and spectral clustering. In \emph{Knowledge-Based Intelligent Information and Engineering Systems, 11th International Conference, KES 2007, XVII Italian Workshop on Neural Networks, Vietri sul Mare, Italy, September 12-14, 2007, Proceedings, Part III}
+, volume 4694 of \emph{Lecture Notes in Computer Science}
+, pages 901-908. Springer, 2007. [ link ] 
+\item  E. Canestrelli, P. Canestrelli, M. Corazza, M. Filippone, S. Giove, and F. Masulli. Local learning of tide level time series using a fuzzy approach. In \emph{Proceedings of the International Joint Conference on Neural Networks, IJCNN 2007, Celebrating 20 years of neural networks, Orlando, Florida, USA, August 12-17, 2007}
+, pages 1813-1818. IEEE, 2007. [ link ] 
+\item  M. Filippone, F. Masulli, and S. Rovetta. Possibilistic clustering in feature space. In \emph{Applications of Fuzzy Sets Theory, 7th International Workshop on Fuzzy Logic and Applications, WILF 2007, Camogli, Italy, July 7-10, 2007, Proceedings}
+, volume 4578 of \emph{Lecture Notes in Computer Science}
+, pages 219-226. Springer, 2007. [ link ] 2006
+\item  M. Filippone, F. Masulli, S. Rovetta, S. Mitra, and H. Banka. Possibilistic approach to biclustering: An application to oligonucleotide microarray data analysis. In \emph{Computational Methods in Systems Biology, International Conference, CMSB 2006, Trento, Italy, October 18-19, 2006, Proceedings}
+, volume 4210 of \emph{Lecture Notes in Computer Science}
+, pages 312-322. Springer, 2006. [ link ] 
+\item  M. Filippone, F. Masulli, S. Rovetta, and S.-P. Constantinescu. Input selection with mixed data sets: A simulated annealing wrapper approach. In \emph{CISI 06 - Conferenza Italiana Sistemi Intelligenti}
+, Ancona - Italy, 27-29 September 2006. 
+\item  M. Filippone, F. Masulli, and S. Rovetta. Gene expression data analysis in the membership embedding space: A constructive approach. In \emph{CIBB 2006 - Third International Meeting on Computational Intelligence Methods for Bioinformatics and Biostatistics}
+, Genova - Italy, 29-31 August 2006. 
+\item  M. Filippone, F. Masulli, and S. Rovetta. Supervised classification and gene selection using simulated annealing. In \emph{Proceedings of the International Joint Conference on Neural Networks, IJCNN 2006, part of the IEEE World Congress on Computational Intelligence, WCCI 2006, Vancouver, BC, Canada, 16-21 July 2006}
+, pages 3566-3571. IEEE, 2006. [ link ] 2005
+\item  M. Filippone, F. Masulli, and S. Rovetta. Unsupervised gene selection and clustering using simulated annealing. In \emph{Fuzzy Logic and Applications, 6th International Workshop, WILF 2005, Crema, Italy, September 15-17, 2005, Revised Selected Papers}
+, volume 3849 of \emph{Lecture Notes in Computer Science}
+, pages 229-235. Springer, 2005. [ link ] 
+\item  F. Masulli, S. Rovetta, and M. Filippone. Clustering genomic data in the membership embedding space. In \emph{CI-BIO - Workshop on Computational Intelligence Approaches for the Analysis of Bioinformatics Data}
+, Montreal - Canada, 5 August 2005. 
+\item  S. Rovetta, F. Masulli, and M. Filippone. Soft rank clustering. In \emph{Neural Nets, 16th Italian Workshop on Neural Nets, WIRN 2005, and International Workshop on Natural and Artificial Immune Systems, NAIS 2005, Vietri sul Mare, Italy, June 8-11, 2005, Revised Selected Papers}
+, volume 3931 of \emph{Lecture Notes in Computer Science}
+, pages 207-213. Springer, 2005. [ link ] 2004
+\item  M. Filippone, F. Masulli, and S. Rovetta. ERAF: a R package for regression and forecasting. In \emph{Biological and Artificial Intelligence Environments}
+, pages 165-173, Secaucus, NJ, USA, 2004. Springer-Verlag New York, Inc. 
+
+\end{itemize}
+\textbf{Discussions}
+\begin{itemize}
+\item  S. Rossi, C. Rusu, L. A. Rosasco, and M. Filippone. Contributed discussion on ``A Bayesian conjugate gradient method''. \emph{Bayesian Analysis, 14(3), 2019}
+, 10 2019. [ link ] 
+\item  M. Filippone, A. Mira, and M. Girolami. Discussion of the paper: ‚ÄùSampling schemes for generalized linear Dirichlet process random effects models‚Äù by M. Kyung, J. Gill, and G. Casella. \emph{Statistical Methods \& Applications}
+, 20:295-297, 2011. [ link ] 
+\item  M. Filippone. Discussion of the paper ‚ÄùRiemann manifold Langevin and Hamiltonian Monte Carlo methods‚Äù by Mark Girolami and Ben Calderhead. \emph{Journal of the Royal Statistical Society, Series B (Statistical Methodology)}
+, 73(2):164-165, 2011. [ link ] 
+\item  V. Stathopoulos and M. Filippone. Discussion of the paper ‚ÄùRiemann manifold Langevin and Hamiltonian Monte Carlo methods‚Äù by Mark Girolami and Ben Calderhead. \emph{Journal of the Royal Statistical Society, Series B (Statistical Methodology)}
+, 73(2):167-168, March 2011. [ link ] 
+
+\end{itemize}
+\textbf{Theses}
+\begin{itemize}
+\item  M. Filippone. \emph{Central Clustering in Kernel-Induced Spaces}
+. Phd thesis in computer science, University of Genova, February 2008. 
+\item  M. Filippone. Metodi di ensemble per la previsione di serie storiche. Master's degree thesis in physics, University of Genova, July 2004. 
 
 \end{itemize}
 

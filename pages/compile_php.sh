@@ -1,9 +1,3 @@
 php biography.php >biography.html
-php links.php >links.html
-php media.php >media.html
-php gears.php >gears.html
 php publications.php >publications.html
-php axachair.php >axachair.html
-php phd_projects.php >phd_projects.html
 php code.php >code.html
-php GPtalks.php >GPtalks.html

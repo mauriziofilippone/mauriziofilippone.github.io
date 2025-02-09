@@ -1,7 +1,7 @@
 export TMPDIR=.
 
 JOURNALSYEARS=(2024 2023 2022 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008)
-CONFERENCESYEARS=(2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2008 2007 2006 2005 2004)
+CONFERENCESYEARS=(2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2008 2007 2006 2005 2004)
 TECHREPYEARS=(2021 2020 2019 2018 2017 2016 2015 2013 2012 2009 2007 2006)
 
 for i in ${JOURNALSYEARS[*]}; do 
@@ -164,22 +164,24 @@ rm theses.html
 # perl -i -pe's|conferences_bib.html|biblio_bib.html|' publications_list_scv.html
 # perl -i -pe's|discussions_bib.html|biblio_bib.html|' publications_list_scv.html
 
-# cp publications_list_scv.html tmp
-# perl -i -pe's|<p>||' tmp
-# perl -i -pe's|</p>||' tmp
-# perl -i -pe's|&nbsp;| |g' tmp
+cp qq.html tmp
+perl -i -pe's|.+strikethrough.+||' tmp
+perl -i -pe's|<p>||' tmp
+perl -i -pe's|</p>||' tmp
+perl -i -pe's|&nbsp;| |g' tmp
 
-# ./html2latex tmp
-# mv tmp.tex publications_list_scv.tex
-# awk 'FNR>5' publications_list_scv.tex >tmp
-# sed '$d' tmp >publications_list_scv.tex
-# perl -i -pe's|\[.+\]||' publications_list_scv.tex
-# perl -i -pe's|}\n|}|' publications_list_scv.tex
+./html2latex tmp
+mv tmp.tex publications_list.tex
+awk 'FNR>5' publications_list.tex >tmp
+sed '$d' tmp >publications_list.tex
+perl -i -pe's|\[.+\]||' publications_list.tex
+perl -i -pe's|}\n|}|' publications_list.tex
 
 # rm journals_bib.html 
 # rm conferences_bib.html 
 # rm discussions_bib.html 
 
-# pdflatex short_cv.tex
+pdflatex cv_en.tex
+pdflatex short_cv.tex
 
 # mv *.pdf ../cv/

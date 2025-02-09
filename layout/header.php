@@ -138,7 +138,7 @@ $menu['links'] = 'Links';
 
   <div class="divider"></div>
 
-  <div class="lastupdate"><b>Last updated</b>: <br><em>22 Jan 2025</em></div>
+  <div class="lastupdate"><b>Last updated</b>: <br><em>09 Feb 2025</em></div>
 
   <div class="divider"></div>
 
