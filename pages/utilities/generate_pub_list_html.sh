@@ -1,6 +1,6 @@
 export TMPDIR=.
 
-JOURNALSYEARS=(2024 2023 2022 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008)
+JOURNALSYEARS=(2025 2024 2023 2022 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008)
 CONFERENCESYEARS=(2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2008 2007 2006 2005 2004)
 TECHREPYEARS=(2021 2020 2019 2018 2017 2016 2015 2013 2012 2009 2007 2006)
 
@@ -164,7 +164,7 @@ rm theses.html
 # perl -i -pe's|conferences_bib.html|biblio_bib.html|' publications_list_scv.html
 # perl -i -pe's|discussions_bib.html|biblio_bib.html|' publications_list_scv.html
 
-cp qq.html tmp
+cp ../publications_list.html tmp
 perl -i -pe's|.+strikethrough.+||' tmp
 perl -i -pe's|<p>||' tmp
 perl -i -pe's|</p>||' tmp
