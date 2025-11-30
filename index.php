@@ -41,12 +41,17 @@ Kingdom of Saudi Arabia
 <br><br>
 <br><br>
 <p>
-<b>**** A message to perspective Post-Docs and PhD candidates ****</b>
+<b>** A message to perspective students and Post-Docs **</b>
 
 <p>
 I'm always looking for talented students and Post-Docs who are passionate about Computational Statistics and Probabilistic Machine Learning.
-If you are interested in joining my group at KAUST, please get in touch! 
+If you are interested in joining my group at KAUST in any position, please apply using this unified point of contact:
+<a href="http://apply.interfolio.com/178419" target="_blank">
+link
+</a>
 
+<p>
+<b>Note</b>: If you are not contacted within six weeks after submitting your application, this means you are not selected for an interview - no need to send emails asking for an update on the application. 
 <!--
 <p>
 <b>&nbsp;- Postdoc positions in Bayesian Deep Learning</b>:
