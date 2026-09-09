@@ -305,6 +305,10 @@ permalink: /:categories/:title/
 timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
+# Disable automatic title extraction from first heading
+titles_from_headings:
+  enabled: false
+
 # Plugins
 plugins:
   - jekyll-feed
