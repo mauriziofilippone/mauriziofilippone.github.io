@@ -13,7 +13,7 @@ redirect_from:
 
 ## Qualifications
 
-- **Habilitation à diriger des recherches**, France, 2021 (highest French academic degree enabling professorship)
+- **Habilitation à diriger des recherches**, France, 2017 (highest French academic degree enabling professorship)
 - **Post-graduate Certificate in Academic Practice**, University of Glasgow, UK, 2014
 
 ## Academic Positions
