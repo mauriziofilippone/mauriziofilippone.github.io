@@ -1,0 +1,77 @@
+---
+---
+
+/*
+ * This file controls what is imported from /_sass
+ *
+ * Note that the files are processed in the order they are imported, so they are partly
+   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ */
+
+@import
+    "vendor/breakpoint/breakpoint",
+
+    "themes",
+    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+
+    "include/mixins",
+    "vendor/susy/susy",
+
+    "layout/reset",
+    "layout/base",
+
+    "include/utilities",
+    "layout/tables",
+    "layout/buttons",
+    "layout/notices",
+    "layout/masthead",
+    "layout/navigation",
+    "layout/footer",
+    "syntax",
+
+    "layout/forms",
+
+    "layout/page",
+    "layout/archive",
+    "layout/sidebar",
+    "layout/json_cv"
+;
+
+/* Remove top margin on first element in page content */
+.page__content > *:first-child,
+.page__content > style + *,
+.archive > *:first-child,
+.archive h1.page__title + * {
+  margin-top: 0;
+}
+
+/* No top margin on paper titles inside research entries */
+.research-entry > h3:first-child {
+  margin-top: 0;
+}
+
+/* Tighter horizontal rules */
+.page__content hr,
+.archive__item hr {
+  margin: 0.25em 0;
+}
+
+/* h2 accent bar — Option A (single + archive layouts) */
+.page__content h2,
+.archive h2 {
+  border-left: 4px solid #0070c0;
+  padding-left: 0.75rem;
+  margin-top: 2.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .page__content h2,
+  :root:not([data-theme="light"]) .archive h2 {
+    border-left-color: #4da6ff;
+  }
+}
+:root[data-theme="dark"] .page__content h2,
+:root[data-theme="dark"] .archive h2 {
+  border-left-color: #4da6ff;
+}

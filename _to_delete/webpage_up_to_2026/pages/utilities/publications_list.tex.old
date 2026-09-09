@@ -1,0 +1,216 @@
+\textbf{Journals}
+\begin{itemize}
+\item 
+
+  M. Filippone and G. Sanguinetti. Approximate inference of the bandwidth in multivariate kernel density estimation. \emph{Computational Statistics \& Data Analysis}
+, 55(12):3104-3122, 2011.  bib  pdf  http  
+
+\item 
+
+  M. Filippone and G. Sanguinetti. A perturbative approach to novelty detection in autoregressive models. \emph{IEEE Transactions on Signal Processing}
+, 59(3):1027-1036, 2011.  bib  pdf  http  
+
+\item 
+
+  L. Mohamed, B. Calderhead, M. Filippone, M. Christie, and M. Girolami. Population MCMC methods for history matching and uncertainty quantification. \emph{Computational Geosciences}
+. to appear.  bib  
+
+\item 
+
+  M. Filippone, F. Masulli, and S. Rovetta. Applying the possibilistic c-means algorithm in kernel-induced spaces. \emph{IEEE Transactions on Fuzzy Systems}
+, 18(3):572-584, June 2010.  bib  pdf  http  
+
+\item 
+
+  M. Filippone, F. Masulli, and S. Rovetta. Simulated annealing for supervised gene selection. \emph{Soft Computing}
+. to appear.  bib  http  
+
+\item 
+
+  M. Filippone and G. Sanguinetti. Information theoretic novelty detection. \emph{Pattern Recognition}
+, 43(3):805-814, March 2010.  bib  pdf  http  
+
+\item 
+
+  M. Filippone. Dealing with non-metric dissimilarities in fuzzy central clustering algorithms. \emph{International Journal of Approximate Reasoning}
+, 50(2):363-384, February 2009.  bib  pdf  http  
+
+\item 
+
+  F. Camastra and M. Filippone. A comparative evaluation of nonlinear dynamics methods for time series prediction. \emph{Neural Computing and Applications}
+, 18(8):1021-1029, November 2009.  bib  pdf  http  
+
+\item 
+
+  M. Filippone, F. Masulli, and S. Rovetta. Clustering in the membership embedding space. \emph{International Journal of Knowledge Engineering and Soft Data Paradigms}
+, 4(1):363-375, 2009.  bib  
+
+\item 
+
+  S. Rovetta, F. Masulli, and M. Filippone. Soft ranking in clustering. \emph{Neurocomputing}
+, 72(7-9):2028-2031, March 2009.  bib  pdf  http  
+
+\item 
+
+  M. Filippone, F. Camastra, F. Masulli, and S. Rovetta. A survey of kernel and spectral methods for clustering. \emph{Pattern Recognition}
+, 41(1):176-190, January 2008.  bib  Best Paper Award  pdf  http  
+
+
+\end{itemize}
+\textbf{Discussions}
+\begin{itemize}
+\item 
+
+  M. Filippone, A. Mira, and M. Girolami. Discussion of the paper: ”Sampling schemes for generalized linear Dirichlet process random effects models” by M. Kyung, J. Gill, and G. Casella. \emph{Statistical Methods \& Applications}
+, 20:295-297, 2011.  bib  pdf  http  
+
+\item 
+
+  M. Filippone. Discussion of the paper ”Riemann manifold Langevin and Hamiltonian Monte Carlo methods” by Mark Girolami and Ben Calderhead. \emph{Journal of the Royal Statistical Society, Series B (Statistical Methodology)}
+, 73(2):164-165, 2011.  bib  pdf  http  
+
+\item 
+
+  V. Stathopoulos and M. Filippone. Discussion of the paper ”Riemann manifold Langevin and Hamiltonian Monte Carlo methods” by Mark Girolami and Ben Calderhead. \emph{Journal of the Royal Statistical Society, Series B (Statistical Methodology)}
+, 73(2):167-168, March 2011.  bib  pdf  http  
+
+
+\end{itemize}
+\textbf{Conferences}
+\begin{itemize}
+\item 
+
+  D. Barbar\'a, C. Domeniconi, Z. Duric, M. Filippone, R. Mansfield, and E. Lawson. Detecting suspicious behavior in surveillance images. In \emph{ICDM Workshops}
+, pages 891-900. IEEE Computer Society, 2008.  bib  pdf  http  
+
+\item 
+
+  M. Filippone, F. Masulli, and S. Rovetta. Stability and performances in biclustering algorithms. In F. Masulli, R. Tagliaferri, and G. Verkhivker, editors, \emph{ CIBB}
+, volume 5488 of \emph{Lecture Notes in Computer Science}
+, pages 91-101. Springer, 2008.  bib  
+
+\item 
+
+  M. Filippone, F. Masulli, and S. Rovetta. An experimental comparison of kernel clustering methods. In B. Apolloni, S. Bassis, and M. Marinaro, editors, \emph{WIRN}
+, volume 193 of \emph{Frontiers in Artificial Intelligence and Applications}
+, pages 118-126. IOS Press, 2008.  bib  
+
+\item 
+
+  F. Camastra and M. Filippone. SVM-based time series prediction with nonlinear dynamics methods. In B. Apolloni, R. J. Howlett, and L. C. Jain, editors, \emph{KES (3)}
+, volume 4694 of \emph{Lecture Notes in Computer Science}
+, pages 300-307. Springer, 2007.  bib  pdf  http  
+
+\item 
+
+  S. Rovetta, F. Masulli, and M. Filippone. Membership embedding space approach and spectral clustering. In B. Apolloni, R. J. Howlett, and L. C. Jain, editors, \emph{KES (3)}
+, volume 4694 of \emph{Lecture Notes in Computer Science}
+, pages 901-908. Springer, 2007.  bib  pdf  http  
+
+\item 
+
+  E. Canestrelli, P. Canestrelli, M. Corazza, M. Filippone, S. Giove, and F. Masulli. Local learning of tide level time series using a fuzzy approach. In \emph{IJCNN}
+, pages 1813-1818. IEEE, 2007.  bib  pdf  http  
+
+\item 
+
+  M. Filippone, F. Masulli, and S. Rovetta. Possibilistic clustering in feature space. In F. Masulli, S. Mitra, and G. Pasi, editors, \emph{WILF}
+, volume 4578 of \emph{Lecture Notes in Computer Science}
+, pages 219-226. Springer, 2007.  bib  pdf  http  
+
+\item 
+
+  M. Filippone, F. Masulli, S. Rovetta, S. Mitra, and H. Banka. Possibilistic approach to biclustering: An application to oligonucleotide microarray data analysis. In C. Priami, editor, \emph{CMSB}
+, volume 4210 of \emph{Lecture Notes in Computer Science}
+, pages 312-322. Springer, 2006.  bib  pdf  http  
+
+\item 
+
+  M. Filippone, F. Masulli, S. Rovetta, and S.-P. Constantinescu. Input selection with mixed data sets: A simulated annealing wrapper approach. In \emph{CISI 06 - Conferenza Italiana Sistemi Intelligenti}
+, Ancona - Italy, 27-29 September 2006.  bib  pdf  
+
+\item 
+
+  M. Filippone, F. Masulli, and S. Rovetta. Gene expression data analysis in the membership embedding space: A constructive approach. In \emph{CIBB 2006 - Third International Meeting on Computational Intelligence Methods for Bioinformatics and Biostatistics}
+, Genova - Italy, 29-31 August 2006.  bib  pdf  
+
+\item 
+
+  M. Filippone, F. Masulli, and S. Rovetta. Supervised classification and gene selection using simulated annealing. In \emph{IJCNN}
+, pages 3566-3571. IEEE, 2006.  bib  pdf  http  
+
+\item 
+
+  M. Filippone, F. Masulli, and S. Rovetta. Unsupervised gene selection and clustering using simulated annealing. In I. Bloch, A. Petrosino, and A. Tettamanzi, editors, \emph{WILF}
+, volume 3849 of \emph{Lecture Notes in Computer Science}
+, pages 229-235. Springer, 2005.  bib  pdf  http  
+
+\item 
+
+  F. Masulli, S. Rovetta, and M. Filippone. Clustering genomic data in the membership embedding space. In \emph{CI-BIO - Workshop on Computational Intelligence Approaches for the Analysis of Bioinformatics Data}
+, Montreal - Canada, 5 August 2005.  bib  pdf  
+
+\item 
+
+  S. Rovetta, F. Masulli, and M. Filippone. Soft rank clustering. In B. Apolloni, M. Marinaro, G. Nicosia, and R. Tagliaferri, editors, \emph{WIRN/NAIS}
+, volume 3931 of \emph{Lecture Notes in Computer Science}
+, pages 207-213. Springer, 2005.  bib  pdf  http  
+
+\item 
+
+  M. Filippone, F. Masulli, and S. Rovetta. ERAF: a R package for regression and forecasting. In \emph{Biological and Artificial Intelligence Environments}
+, pages 165-173, Secaucus, NJ, USA, 2005. Springer-Verlag New York, Inc.  bib  pdf  
+
+
+\end{itemize}
+\textbf{Technical Reports}
+\begin{itemize}
+\item 
+
+  M. Filippone, M. Zhong, and M. Girolami. On the fully Bayesian treatment of latent Gaussian models using stochastic simulations. Technical Report TR-2012-329, School of Computing Science, University of Glasgow, February 2012.  bib  pdf  
+
+\item 
+
+  M. Filippone and G. Sanguinetti. Novelty detection in autoregressive models using information theoretic measures. Technical Report CS-09-06, Department of Computer Science, University of Sheffield, July 2009.  bib  pdf  
+
+\item 
+
+  M. Filippone and G. Sanguinetti. Information theoretic novelty detection. Technical Report CS-09-02, Department of Computer Science, University of Sheffield, February 2009.  bib  pdf  
+
+\item 
+
+  M. Filippone. Fuzzy clustering of patterns represented by pairwise dissimilarities. Technical Report ISE-TR-07-05, Department of Information and Software Engineering, George Mason University, October 2007.  bib  pdf  
+
+\item 
+
+  M. Filippone, F. Camastra, F. Masulli, and S. Rovetta. A survey of kernel and spectral methods for clustering. Technical Report DISI-TR-06-19, Department of Computer and Information Sciences at the University of Genova, Italy, 18th October 2006.  bib  
+
+\item 
+
+  M. Filippone, F. Masulli, and S. Rovetta. A wrapper approach to supervised input selection using simulated annealing. Technical Report DISI-TR-06-10, Department of Computer and Information Sciences at the University of Genova, Italy, 12th June 2006.  bib  pdf  
+
+
+\end{itemize}
+\textbf{Theses}
+\begin{itemize}
+\item 
+
+  M. Filippone. \emph{Central Clustering in Kernel-Induced Spaces}
+. Phd thesis in computer science, University of Genova, February 2008.  bib  pdf  
+
+\item 
+
+  M. Filippone. Metodi di ensemble per la previsione di serie storiche. Master's degree thesis in physics, University of Genova, July 2004.  bib  pdf  
+
+
+\end{itemize}
+\textbf{Magazines}
+\begin{itemize}
+\item 
+
+  C. Calcagno, M. Filippone, and D. Ghersi. R: Potenza e versatilit\`a per l'analisi statistica. \emph{Linux \& C.}
+, 53:41-46, June 2006.  bib  http  
+
+
+\end{itemize}
+

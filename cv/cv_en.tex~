@@ -1,0 +1,421 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{eurosym}
+
+\addtolength{\topmargin}{-60pt}
+\addtolength{\textheight}{60pt}
+\addtolength{\oddsidemargin}{-70pt}
+\addtolength{\textwidth}{140pt}
+
+\begin{document}
+
+\begin{center}
+{\bf \LARGE Curriculum Vitae}
+\end{center}
+
+\section*{Personal Information}
+\begin{description}
+\item Name:               {\bf Maurizio Filippone}
+%\item Place of birth: Genova
+\item Nationality:        Italian
+\item Current position:
+{\em AXA Chair of Computational Statistics \& Associate Professor} at EURECOM, Sophia Antipolis, France
+\item Email:              \texttt{maurizio.filippone@eurecom.fr}
+\item Web Page:           \url{http://www.eurecom.fr/~filippon}
+\end{description}
+
+\section*{Education}
+\begin{itemize}
+\item From 01-01-2005 to 05-05-2008 \\
+Ph.D. in Computer Science \\
+Department of Computer and Information Sciences - University of Genova \\
+Thesis title: Central Clustering in Kernel-Induced Spaces \\
+Thesis topics: kernel methods for clustering, spectral clustering, relational clustering, fuzzy clustering.
+
+\item From 01-09-1998 to 14-07-2004  \\
+Master's Degree in Physics  \\
+Department of Physics - University of Genova \\
+Grades: 110/110  \\
+Thesis title: Ensemble methods for time series analysis and forecasting \\
+Thesis topics: Non linear systems, regression, ensemble of learning machines, signal processing.
+
+\item From 01-09-1993 to 01-07-1998  \\
+Diploma in electronics and telecommunications \\
+High School I.T.I.S. Italo Calvino - Genova \\
+Grades: 60/60
+
+%\item From 01-03-1997 to 15-03-1997  \\
+%Corporate stage in electronics and telecommunications \\
+%at EBTech snc %, Via Greto di Cornigliano 6R 16152 
+%- Genova
+\end{itemize}
+
+\section*{Research Experience}
+%Period (da - a)
+%Nome e indirizzo del datore di lavoro
+%Tipo di azienda o settore
+%Tipo di impiego
+%Principali mansioni e responsabilità
+\begin{itemize}
+\item From Fall 2015 to Spring 2018 - {\em Associate Professor} \\
+  EURECOM, Sophia Antipolis, France \\
+  Keywords: Bayesian inference, Nonparametric modeling, Scalable inference
+
+\item From Fall 2015 to Spring 2018 - {\em Ma\^{i}tre de Conf\'{e}rence} \\
+  EURECOM, Sophia Antipolis, France \\
+  Keywords: Bayesian inference, Nonparametric modeling, Scalable inference
+
+\item From Fall 2011 to Fall 2015 - {\em Lecturer} \\
+  School of Computing Science - University of Glasgow \\
+  Keywords: Bayesian inference, Gaussian Processes, Markov chain Monte Carlo
+
+
+\item From 01-01-2010 to 31-08-2011 \\
+  Department of Statistical Science - University College London (2010 with the Department of Computing Science - University of Glasgow) \\
+  1-19 Torrington Place, London, WC1E 7HB - United Kingdom. \\
+  Grant: The Synthesis of Probabilistic Prediction \& Mechanistic Modelling within a Computational \& Systems Biology Context \\
+%  Topics of the fellowship: novelty detection, statistical testing, Bayesian inference in data modeling. \\
+  PI: Prof. Mark Girolami
+
+\item From 15-03-2008 to 30-11-2009 \\
+  Department of Computer Science - University of Sheffield \\
+  Regent Court, 211 Portobello, Sheffield, S1 4DP - United Kingdom \\
+  Grant: ALMS: Advanced Lifestyle Monitoring Systems \\
+  Topics of the fellowship: novelty detection, statistical testing, Bayesian inference in data modeling. \\
+  PI: Dr Guido Sanguinetti
+
+\item From 01-03-2007 to 30-10-2007 \\
+  Department of Information and Software Engineering - George Mason University \\
+  4400 University Drive, Fairfax, VA 22030 - USA \\
+  Grant: Detecting Suspicious Behavior in Reconnaissance Images \\
+  Topics of the fellowship: outlier detection, density estimation, relational clustering. \\
+  PI, co-PI: Prof. Daniel Barbar\`a and Prof. Carlotta Domeniconi
+
+\item From 20-07-2006 to 30-10-2006 \\
+  Consorzio Venezia Ricerche \\
+  Via della Libert\`a 12, 30175 Marghera, Venezia - Italy \\
+  Grant: Tide level forecasting in the lagoon of Venezia \\ 
+  Topics of the fellowship: time series analysis and forecasting, regression, ensembles of learning machines. \\
+  Supervisor: Prof. Elio Canestrelli
+
+\item From 01-09-2005 to 30-04-2007 \\
+  Department of Computer Science - University of Genova \\
+  Via Dodecaneso 35, 16146 Genova - Italy \\
+  Topic of the fellowship: \\
+  Novel clustering techniques with applications in image segmentation and analysis \\
+  Supervisor: Dr Stefano Rovetta
+
+\item From 01-06-2005 to 31-08-2005 \\
+  Department of Computer Science and Department of Endocrinologic and Metabolic Sciences - University of Genova \\
+  Via Dodecaneso 35, 16146 Genova - Italy \\
+  Topic of the fellowship: \\
+  Application of advanced clustering techniques in diagnostic problems in rheumatology \\
+  Supervisor: Prof. Guido Rovetta
+
+\item From 01-09-2004 to 31-09-2004 \\
+  Department of Computer Science - University of Genova \\
+  Via Dodecaneso 35, 16146 Genova - Italy \\
+  Topic of the fellowship: \\
+  Development of a package in R and C languages for time series analysis and forecasting \\
+  Supervisor: Prof. Francesco Masulli
+
+\item From 01-12-2003 to 31-12-2003 \\
+  Department of Oncology, Biology and Genetic (148) - University of Genova \\
+  Largo Rosanna Benzi 10, 16132 Genova - Italy \\
+  Topic of the fellowship: \\
+  Development of a front-end in Perl Tk and Java languages for an immunitary system simulator in C language \\
+  Supervisor: Prof. Franco Celada
+
+\end{itemize}
+
+
+
+\section*{Research Activity}
+
+
+
+% I started my research career in 2004, in the Department of Computer and Information Sciences at the University of Genova.
+% I worked on my Master's thesis in Physics, supervised by Profs. F.~Masulli and S.~Rovetta, on a comparative study of ensembles of learning machines for regression tasks, with a special interest in time series analysis and forecasting.
+% The analysis of the time series involved the study of some techniques to estimate the number of past observations needed to obtain a faithful reconstruction of the dynamic of the system (model order).
+% A comparative study of some of these methods has been published on the {\em Neural Computing and Applications} journal.
+% The studied and implemented ensemble methods were bagging and adaboost using neural networks and SVMs.
+% I applied these methods to the tide level forecasting problem in the lagoon of Venice obtaining an improvement in the forecasting accuracy with respect to the methods currently in use.
+% The main results have been published in the {\em IJCNN 2007} conference proceedings.
+
+% When I started the Ph.D. in 2005, I focused on clustering problems.
+% The main results of my Ph.D. thesis are the following:
+% \begin{itemize}
+% \item Survey of the literature on kernel and spectral approaches to clustering, reporting the links between them.
+% The review has been published as a survey paper on {\em Pattern Recognition} journal, and it has been selected to be the best paper published in 2008 in the journal Pattern Recognition.
+% \item Proposing the possibilistic $c$-means in the space induced by positive semidefinite kernels.
+% This algorithm is essentially a non parametric estimator of densities in the data space and shows high robustness to outliers.
+% I studied its properties in terms of robustness and stability of the solutions, highlighting the connections to One Class SVMs and Kernel Density Estimation.
+% These results have been published on {\em IEEE Transactions on Fuzzy Systems}.
+% \item Studying the relational clustering when the objects to cluster are described in term of non-metric pairwise dissimilarities.
+% This study has been motivated by my experience abroad during the third year at the Information and Software Engineering department at George Mason University.
+% I worked on a project founded by NRO, with profs. D.~Barbar\`{a}, C.~Domeniconi, and Z.~Duric, on the detection of suspicious behaviors in reconnaissance images, and I dealt with the clustering problem in the case of non-metric dissimilarities.
+% I reported the studies on the algebraic operations transforming the dissimilarities between patterns from non-metric to metric, and I studied the effects of these oprations on many clustering algorithms.
+% These studies showed also a direct link between relational clustering and clustering in the space induced by positive semidefinite kernels.
+% This part of the thesis has been published as a regular paper in the {\em International Journal of Approximate Reasoning}.
+% \end{itemize}
+
+% During these years I also worked on other machine learning related projects, such as dimensionality reduction and biclustering.
+% The results of these works have been published in several refereed conference proceedings (LNCS series), one of them has been published as a letter on {\em Neurocomputing}, and another one will appear on {\em International Journal of Knowledge Engineering and Soft Data Paradigms}.
+% Typical applications of dimensionality reduction approaches can be found in genomic data analysis, where the number of features is very large with respect to the number of patterns.
+
+% In March 2008 I was Research Associate at the University of Sheffield with the Machine Learning group, supervised by Dr Guido Sanguinetti.
+% My research area was on statistical methods for pattern recognition, including both the frequentist and Bayesian paradigms.
+% Since the grant that was funding my research activity was about detecting changes in the lifestyle of elderly people to infer changes in their health conditions, much of my studies were on the novelty detection problem.
+% We recast the novelty detection problem in the framework of information theory.
+% We studied the Gaussian case, showing that the proposed method leads to a statistical test that is able to control the false positive rate on test data even in the case of small training sets.
+% Based on this remarkable result, we extended the approach to the mixture of Gaussians and to linear autoregressive time series.
+% The results for the Gaussian and mixture of Gaussians cases have been collected in a paper that has been published on {\em Pattern Recognition}, and the extension to autoregressive time-series have been published on the {\em IEEE Transactions on Signal Processing}.
+
+\subsection*{Research Grants}
+\begin{itemize}
+  \item \emph{ECO-ML: Rethinking Modern Machine Learning Tools for a New Generation of Low-Power Large-Scale Modeling Systems} (300K\euro), 2018--2021, ANR-JCJC 
+  \item AXA Chair of Computational Statistics: \emph{New Computational Approaches to Risk Modeling} (600K\euro), 2016--2023, AXA Research Fund 
+  \item \emph{Computational inference of biopathway dynamics and structures} (\pounds 350K) with D. Husmeier and S. Rogers - EPSRC research grant (2014 -- 2017)
+  \item \emph{Method and software integration for systems biology} (\pounds 30K) with D. Husmeier and S. Rogers - Bridging the Gap-EPSRC research grant (2012)
+\end{itemize}
+
+\subsection*{Awards}
+\begin{itemize}
+     \item Best paper published in 2008 in the journal Pattern Recognition:
+       \\M. Filippone, F. Camastra, F. Masulli, and S. Rovetta.
+       \textbf{A survey of kernel and spectral methods for clustering}.
+       \emph{Pattern Recognition}, 41(1):176-190, January 2008.
+       \\Manuscripts published in volume 41 (year 2008) have been judged by the Editors-in-Chief and the members of the Editorial and Advisory Boards of the journal based on the following criteria: originality of the contribution, presentation and exposition of the manuscript, and citations by other researchers.
+\end{itemize}
+
+\subsection*{Publications}
+
+\input{publications_list.tex}
+
+\subsection*{Professional Activities}
+\begin{itemize}
+\item {\em Associate Editor} for Pattern Recognition (end 2012 - end 2016)
+\item {\em Associate Editor} for the IEEE Transactions on Neural Networks and Learning Systems (2013 - end 2016)
+\item {\em Technical Program Chair} for IJCNN 2014
+\end{itemize}
+
+\subsection*{Referee Activity}
+\begin{itemize}
+\item Journals:
+\input{reviewer_journals.txt}
+\input{reviewer_journals_low.txt}
+\item Conferences: 
+\input{reviewer_conferences.txt}
+\end{itemize}
+
+\subsection*{Conferences Attended}
+\begin{itemize}
+\item 30 May - 1 June 2012, Trondheim, Norway \\
+  Second Workshop on Bayesian Inference for Latent Gaussian Models with Applications.
+  \\Oral presentation: \emph{On the Fully Bayesian Treatment of Latent Gaussian Models using Stochastic Simulations}.
+\item 09 June 2011, Bologna, Italy \\
+  Italian Statistical Society Conference (SIS).
+  \\Oral presentation: \emph{Bayesian inference in latent variable models and applications}.
+\item 10-11 December 2010, Whistler, BC, Canada \\
+  NIPS 2010 Workshops: Neural Information Processing Systems Conference.
+  \\Poster presentation: \emph{Posterior Inference in Latent Gaussian Models Using Manifold MCMC Methods}.
+\item 23-26 August 2010, Istanbul, Turkey \\
+  ICPR 2010 - 20th International Conference on Pattern Recognition
+  \\\emph{I received the award for the best paper published in 2008 in Pattern Recognition journal}
+\item 12-14 July 2010, Sheffield, United Kingdom \\
+  UCM 2010 - Uncertainty in Computer Models 2010 conference
+\item 5-9 July 2010, Glasgow, United Kingdom \\
+  IWSM 2010 - 25th International Workshop on Statistical Modelling
+\item 3-8 June 2010, Benidorm, Spain \\
+  Ninth Valencia International Meeting on Bayesian Statistics - 2010 World Meeting of the International Society for Bayesian Analysis.
+  \\Poster presentation: \emph{Inference for Gaussian Process Emulation of Oil Reservoir Simulation Codes}.
+\item 6-7 April 2010, Warwick, United Kingdom \\
+  WOGAS2 - Workshop on Geometric and Algebraic Statistics 2.
+\item 3-5 March 2010, Edinburgh, United Kingdom \\
+  Mixture estimation and applications.
+  \\Poster presentation: \emph{Information Theoretic Novelty Detection for Mixtures of Gaussians}.
+\item 7-9 September 2009, Sheffield, United Kingdom \\
+  PRIB 2009: Pattern Recognition in Bioinformatics 2009.
+\item 20-21 May 2009, Swansea, United Kingdom \\
+  NCAF Meeting: Neural Computing and Applications. Special Theme - Grand Challenges in Information-Driven Healthcare.
+\item 15-19 December 2008, Pisa, Italy \\
+  ICDM 2008: IEEE International Conference on Data Mining.
+  \\Oral presentation: \emph{Detecting Suspicious Behavior in Surveillance Images}.
+\item 8-13 December 2008, Vancouver, BC, Canada \\
+  NIPS 2008: Neural Information Processing Systems Conference.
+\item 9-10 September 2008, Sheffield, United Kingdom \\
+  NCAF Meeting: Neural Computing and Applications. Special Theme - Dynamics and Dynamic Systems.
+  \\Oral presentation: \emph{Information Theoretic Novelty Detection}.
+\item 18-19 June 2008, Oxford, United Kingdom \\
+  NCAF Meeting: Neural Computing and Applications. Special Theme - Signal Processing and Biomedical Applications.
+\item 31 March - 2 April 2008, Sheffield, United Kingdom \\
+  Data Modelling Workshops \& Symposium.
+\item 13-17 August 2007, Orlando, FL - USA \\
+  IJCNN 2007 - International Joint Conferences on Neural Networks.
+  \\Poster presentation: \emph{Local learning of tide level time series using a fuzzy approach}.
+\item 17 August 2007, Orlando, FL - USA \\
+  CI-BIO 2007 - Post-Conference Workshop on Computational Intelligence Approaches for the Analysis of Bioinformatics Data.
+  \\Oral presentation of the paper: \emph{Aggregating Memberships in Possibilistic Biclustering}.
+\item 27-29 September 2006, Ancona - Italy \\
+  CISI 06 Conferenza Italiana Sistemi Intelligenti.
+  \\Poster presentation: \emph{Input Selection with Mixed Data Sets: A Simulated Annealing Wrapper Approach}.
+\item 15-16 September 2006, Genova - Italy \\
+  BioLeMiD 06 - Third Bioinformatics Meeting on Machine Learning for Microarray Studies of Disease: biomarker selection.
+\item 29-31 August 2006, Genova - Italy
+  FLINS 2006 - 7th International FLINS Conference on Applied Artificial Intelligence.
+\item 28 June 2006, Genova - Italy \\
+  Workshop on Trends in Computational Sciences.
+\item 22 June 2006, Genova - Italy \\
+  The I LIMBS day - A free one-day workshop about intelligence.
+\item 21 June 2006, Genova - Italy \\
+  Second workshop on Analytic Methods for Learning Theory: Learning, Regularization and Approximation
+\item 15-17 September 2005, Crema - Italy \\
+  WILF 05 - International Workshop on Fuzzy Logic and Applications.
+  \\Oral presentation of the paper: \emph{Unsupervised gene selection and clustering using simulated annealing}.
+\item 16-17 June 2005, Genova - Italy \\
+  CLIP 2005 - Workshop on Cross-language information processing.
+  \\Oral presentation of the paper: \emph{Soft rank clustering}.
+\item 8-11 June 2005, Vietri sul Mare - Italy \\
+  WIRN 05 - XVI Italian Workshop on Neural Networks.
+  \\Oral presentation of the paper: \emph{Soft rank clustering}.
+\item 14-17 September 2004, Perugia - Italy \\
+  WIRN 04 - XV Italian Workshop on Neural Networks.
+  \\Poster presentation: \emph{ERAF: a R package for regression and forecasting}.
+\end{itemize}
+
+\subsection*{Talks}
+\begin{itemize}
+\item 20 October, 2011, University of Glasgow - \emph{Inference in hierarchical models using stochastic approximations}.
+\item 08 February, 2011, University College London (CSML seminars series) - \emph{Calibration of Oil Reservoir Simulation Codes}.
+\item 24 January, 2011, University College London - \emph{Classification of fMRI data using latent Gaussian models}.
+\item 12 November, 2010, University of Glasgow - \emph{Information Theoretic Novelty Detection}.
+\item 13 October, 2010, Royal Statistical Society - \emph{Discussion of the paper ``Riemann manifold Langevin and Hamiltonian Monte Carlo methods'' by M. Girolami and B. Calderhead}.
+\item 26 March, 2010, Liverpool John Moores University - \emph{Information Theoretic Novelty Detection}.
+\item 11 November, 2009, University of Edinburgh - \emph{Information Theoretic Novelty Detection}.
+\item 21 October, 2009, University of Sheffield - Tutorial presentation for the Speech and Hearing group - \emph{The probabilistic approach in data modeling}.
+\item 14 July, 2009, Columbia University - \emph{Information Theoretic Novelty Detection}.
+\item 21 January, 2009, University of Glasgow - \emph{Information Theoretic Novelty Detection}.
+\item 22 December, 2008, University of Genova - \emph{Information Theoretic Novelty Detection}.
+\item 3 March, 2008, University of Milano - \emph{Central Clustering in Kernel-Induced Spaces}.
+\item 27 February, 2008, University of Napoli Parthenope - \emph{Central Clustering in Kernel-Induced Spaces}.
+\item 27 September, 2007, George Mason University - \emph{Kernel and Spectral Methods for Clustering}.
+\item 15 November 2006, University of Genova - \emph{Kernel and Spectral Methods for Clustering}.
+\item 21 March 2006, University of Genova - \emph{Spectral Approach to Clustering}.
+\item 20 December 2005, University of Genova - \emph{Subsequence Matching for Time Series Forecasting}.
+\end{itemize}
+
+
+\section*{Teaching Activity}
+
+% \subsection*{Exam boards}
+% \begin{itemize}
+% \item 2005 and 2006: \\
+%   Neural Networks and Soft Computing - University of Genova, \\ Operating Systems - University of Pisa
+% \end{itemize}
+
+%\begin{itemize}
+%\item 2006:
+%  \begin{itemize}
+%  \item Neural Networks \\
+%    IV / V year, Master's Degree in Computer Science - University of Genova \\
+%    Lecturer: Stefano Rovetta
+%  \item Soft Computing \\
+%    III year, Master's Degree in Computer Science - University of Genova \\
+%    Lecturer: Francesco Masulli
+%  \item Operating Systems \\
+%    II year, Master's Degree in Applied Computer Science - Polo di La Spezia - University of Pisa \\
+%    Lecturer: Francesco Masulli
+%  \end{itemize}
+%\item 2005:
+%  \begin{itemize}
+%  \item Neural Networks \\
+%    IV / V year, Master's Degree in Computer Science - University of Genova \\
+%    Lecturer: Francesco Masulli
+%  \item Soft Computing \\
+%    III year, Master's Degree in Computer Science - University of Genova \\
+%    Lecturer: Francesco Masulli
+%  \item Operating Systems \\
+%    II year, Master's Degree in Applied Computer Science - Polo di La Spezia - University of Pisa \\
+%    Lecturer: Francesco Masulli
+%  \end{itemize}
+%\end{itemize}
+
+% \subsection*{Teaching}
+\begin{itemize}
+\item 09-2013 - 12-2013 \\
+  Lecturer (30 hours)
+  Artificial Intelligence \\
+  Undergraduate Degree Programme - Year 4
+\item 01-2013 - 04-2013 \\
+  Lecturer (30 hours)
+  Machine Learning \\
+  Undergraduate/Postgraduate Degree Programmes - Years 4/5
+\item 09-2012 - 12-2012 \\
+  Lecturer (30 hours)
+  Artificial Intelligence \\
+  Undergraduate Degree Programme - Year 4
+\item 10-2008 \\
+  Lab assistant (2 hours)
+  Bioinformatics \\
+  Computational Biology module for the MSC in Biological and Bioprocess Engineering \\
+  Lecturer: Guido Sanguinetti
+\item 09-2005 - 12-2005 \\
+  Lab assistant (30 hours)
+  Neural Networks \\
+  IV / V year, Master's Degree in Computer Science - University of Genova \\
+  Lecturer: Stefano Rovetta
+\item 09-2005 - 12-2005 \\
+  Lab assistant (10 hours)
+  Soft Computing \\
+  III year, Master's Degree in Computer Science - University of Genova \\
+  Lecturer: Francesco Masulli
+\item 09-2004 - 12-2004 \\
+  Lab assistant (10 hours) \\
+  Introduction to R language (2 hours)
+  Neural Networks \\
+  IV / V year, Master's Degree in Computer Science - University of Genova \\
+  Lecturer: Francesco Masulli
+\end{itemize}
+
+% \subsection*{Other Teaching Experiences}
+% \begin{itemize}
+% \item 09-2005 - 06-2006 \\
+%   Teacher of Mathematics (120 hours) \\
+%   Teacher of Computer Science (80 hours) \\  
+%   IAL LIGURIA - High School (age 14) - Commercial Operator program \\
+%   email: informazioni@ial.liguria.it, segreteria@ial.liguria.it
+% \end{itemize}
+
+%\newpage
+
+
+% \section*{Personal Skills}
+
+% \subsection*{Languages}
+% \begin{itemize}
+% \item Mother tongue: Italian
+% \item English:
+%   \begin{itemize}
+% %    \item Reading ability: good
+% %    \item Writing ability: good
+% %    \item Speaking ability: good
+%     \item From 05-2007 to 10-2007 I attended the grammar, conversation, and pronunciation courses for non-native speakers (60 hours)
+%       at George Mason University, Fairfax, VA 22030 - USA
+%     \item From 20-07-2004 to 05-08-2004 I attended an intermediate level course (30 hours)
+%       at Byron School, 79, Hills Road - CB2 1PG Cambridge 
+%   \end{itemize}
+% \end{itemize}
+
+% \subsection*{Computing Skills}
+% \begin{description}
+% \item[Operating systems:] Windows, Unix and Linux.
+% \item[Programming languages:] R, C, C++, Fortran and Assembler languages.
+% \item[Scripting:]  Perl language.
+% \item[Web:] HTML and PHP languages.
+% \item[Databases:] SQL language.
+% \item[Editing:] Latex and Word.
+% \end{description}
+
+\end{document}

@@ -1,0 +1,31 @@
+---
+permalink: /
+title: "Maurizio Filippone"
+author_profile: true
+redirect_from:
+  - /about/
+  - /about.html
+---
+
+**Associate Professor**, [Statistics Program](https://cemse.kaust.edu.sa/stat), [King Abdullah University of Science and Technology (KAUST)](https://www.kaust.edu.sa/)
+
+**Address:** 4700 King Abdullah University Of Science And Technology, Thuwal 23955-6900, Kingdom of Saudi Arabia  
+**Office:** 1-4112 · **Phone:** +966 12 808 7216  
+**Email:** maurizio.filippone [at] kaust.edu.sa
+
+---
+
+**A message to prospective students and Post-Docs**
+
+I'm always looking for talented students and Post-Docs who are passionate about Computational Statistics and Probabilistic Machine Learning. If you are interested in joining my group at KAUST in any position, please apply using this [unified application link](http://apply.interfolio.com/178419).
+
+**Note:** If you are not contacted within six weeks after submitting your application, this means you are not selected for an interview — no need to send emails asking for an update.
+
+---
+
+## News
+
+{% for post in site.posts limit:15 %}<p><strong>{{ post.date | date: "%d-%m-%y" }}</strong> &mdash; {{ post.content | remove: '<p>' | remove: '</p>' | strip_newlines }}</p>
+{% endfor %}
+
+[... older news](/news/)

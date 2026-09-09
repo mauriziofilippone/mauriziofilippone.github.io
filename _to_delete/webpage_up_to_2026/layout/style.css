@@ -1,0 +1,229 @@
+html {
+  background: #FFFFFF;
+}
+
+body {
+  background: #FFFFFF;
+  color: #333333;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #003399;
+
+  width: 820px;
+  height:100%;
+
+  font-family: Verdana, Arial, Helvetica, Times, sans-serif;
+  font-size: 12px;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #003399;
+}
+
+div {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+}
+
+img {
+  border: 0px;
+}
+
+h2, h3 {
+  line-height: 130%;
+}
+
+#titlecontainer {
+  float: left;
+  width: 820px;
+  border-bottom: 1px solid #003399;
+}
+
+#title_img {
+  float: left;
+
+  text-align: center;
+  padding-top: 2px;
+
+  width: 120px;
+  height: 93px;
+
+  border-right: 1px solid #003399;
+}
+
+#title_img a {
+  color: #FFFFFF;
+}
+
+#title {
+  float: left;
+
+  height: 35px;
+
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#menucontainer {
+  float: left;
+
+  border-right: 1px solid #003399;
+  width: 120px;
+}
+
+#menu {
+  float: left;
+
+  width: 120px;
+  padding-bottom: 10px;
+}
+
+#menu_end {
+  float: left;
+
+  height: 12px;
+  width: 120px;
+
+  margin-bottom: -1px;
+
+  border-bottom: 1px solid #003399;
+}
+
+#imglogo {
+  margin-top: 20px;
+  margin-bottom: 4px;
+
+  width: 50px;
+}
+
+#content {
+  float: right;
+
+  width: 679px;
+  padding: 10px;
+
+  margin-left: -1px;
+
+  border-left: 1px solid #003399;
+
+}
+
+#menu_label {
+  line-height: 100%;
+
+  padding-top: 10px;
+  padding-bottom: 4px;
+
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.menu_section {
+  margin-left: 10px;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.menu_page {
+  margin-left: 10px;
+
+  color: #333333;
+  font-size: 12px;
+}
+
+.menu_page a {
+  color: #333333;
+}
+
+.menu_page a:hover {
+  color: #003399;
+}
+
+.menu_img {
+  margin: 10px;
+
+  color: #333333;
+  text-align: center;
+  font-size: 12px;
+}
+
+.menu_img a {
+  color: #FFFFFF;
+  background: #FFFFFF;
+}
+
+.lastupdate {
+  margin-left: 10px;
+  color: #333333;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.note {
+  color: #333333;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.divider {
+  border-top: 1px solid #003399;
+  margin: 5px;
+}
+
+#myphoto {
+  width: 160px;
+  float: right;
+  padding: 2px;
+}
+
+#wordcloud {
+  width: 240px;
+  float: right;
+  padding: 2px;
+}
+
+.gear {
+  text-align: center;
+  float: left;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 45%;
+}
+
+.gear img {
+  margin-top: 10px;
+  height: 400px;
+}
+
+.strikethrough {
+ overflow: hidden;
+ text-align: center;
+ font-weight: bold; 
+}
+.strikethrough:before,
+.strikethrough:after {
+ background-color: #333;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+.strikethrough:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+.strikethrough:after {
+ left: 0.5em;
+ margin-right: -50%;
+}

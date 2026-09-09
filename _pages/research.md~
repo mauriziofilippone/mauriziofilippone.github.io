@@ -1,0 +1,992 @@
+---
+layout: single
+permalink: /research/
+author_profile: true
+---
+
+<style>
+.research-entry {
+  overflow: hidden;
+  margin: 2.5rem 0;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+.research-entry:last-of-type {
+  border-bottom: none;
+}
+.research-figure {
+  float: left;
+  width: 45%;
+  margin: 0.2rem 1.8rem 1rem 0;
+}
+.research-entry.reverse .research-figure {
+  float: right;
+  margin: 0.2rem 0 1rem 1.8rem;
+}
+.research-figure img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+.research-figure .placeholder {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: #e8e8e8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 0.85rem;
+}
+.research-text h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.research-text p {
+  margin: 0.4rem 0;
+}
+.research-links {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+}
+.research-links a {
+  margin-right: 0.75rem;
+}
+.research-section {
+  margin-top: 3rem;
+  margin-bottom: 0.25rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--border-color, #ccc);
+  font-size: 1.3rem;
+  scroll-margin-top: 5rem;
+}
+@media (max-width: 600px) {
+  .research-figure,
+  .research-entry.reverse .research-figure {
+    float: none;
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+}
+</style>
+
+<!-- ============================================================
+     HOW TO ADD A PAPER
+     - Copy one .research-entry block
+     - Add class="reverse" to alternate sides (odd=normal, even=reverse)
+     - Replace the <img> src with /images/research/your-figure.png
+       (or remove <img> and keep the .placeholder div for now)
+     - Fill in title, description, and links
+     ============================================================ -->
+
+<a id="top"></a>
+<nav class="research-nav">
+  <a href="#bayesian-neural-networks">Bayesian Neural Networks</a>
+  <a href="#deep-gaussian-processes">Deep Gaussian Processes</a>
+  <a href="#data-augmentation">Data Augmentation</a>
+  <a href="#foundation-models">Foundation Models</a>
+  <a href="#measuring-dependencies">Measuring Dependencies</a>
+  <a href="#diffusion-models">Diffusion Models</a>
+  <a href="#gaussian-processes">Gaussian Processes</a>
+  <a href="#neuroscience">Neuroscience Applications</a>
+  <a href="#novelty-detection">Novelty Detection</a>
+</nav>
+
+<style>
+.research-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.5rem 0 2.5rem 0;
+}
+.research-nav a {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--border-color, #ccc);
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s, border-color 0.15s;
+}
+.research-nav a:hover {
+  background: var(--border-color, #e8e8e8);
+  border-color: #999;
+}
+</style>
+
+<h2 id="bayesian-neural-networks" class="research-section">Bayesian Neural Networks</h2>
+
+<!-- ENTRY BNN-1 — figure on the left -->
+<div class="research-entry">
+  <h3>All You Need is a Good Functional Prior for Bayesian Deep Learning</h3>
+  <p>B.-H. Tran, S. Rossi, D. Milios, and M. Filippone. <em>Journal of Machine Learning Research</em>, 23, 2022.</p>
+  <div class="research-figure">
+    <img src="/images/research/bnn_fig2.png" alt="Schematic of imposing GP priors on BNNs via Wasserstein distance minimization">
+  </div>
+  <p>
+    Bayesian Neural Networks (BNNs) treat network weights as random variables with a prior distribution, but the effect of this choice on the induced distribution over their output - the so-called functional prior — is difficult to characterize and often pathological. This work argues that priors should be specified directly in function space and proposes a practical framework to tune weight-space priors so that the induced functional prior matches a target Gaussian process prior. The matching is achieved by minimizing the Wasserstein distance between samples from the two stochastic processes, which is scalable and requires no closed-form expressions. Three parameterizations of BNN priors are considered — Gaussian, hierarchical, and Normalizing flows — and inference is performed with scalable stochastic gradient Hamiltonian Monte Carlo. Extensive experiments on regression and classification benchmarks, including convolutional neural networks, demonstrate systematic improvements over standard Gaussian priors and state-of-the-art approximate Bayesian deep learning methods, bringing fully Bayesian treatment of deep networks a concrete step closer.
+  </p>
+  <div class="research-links">
+    <a href="https://jmlr.org/papers/v23/20-1340.html">Paper</a>
+  <a href="#bayesian-neural-networks" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY BNN-2 — figure on the left -->
+<div class="research-entry">
+  <h3>Model Selection for Bayesian Autoencoders</h3>
+  <p>B.-H. Tran, S. Rossi, D. Milios, P. Michiardi, E.V. Bonilla, and M. Filippone. <em>NeurIPS</em>, 2021.</p>
+  <div class="research-figure">
+    <img src="/images/research/bae_fig1.png" alt="Image reconstructions comparing standard N(0,1) prior vs optimized prior for MNIST and CelebA">
+  </div>
+  <p>
+    Bayesian autoencoders (BAEs) are autoencoders where the parameters are treated as random variables with a prior distribution. However, the standard choice of an isotropic Gaussian prior induces a pathological functional prior over reconstructions — one that fails to capture meaningful structure in the data. This work shows that these issues can be overcome by optimizing the prior hyperparameters to maximize an objective inspired by Bayesian principles, turning prior selection into a principled model selection problem. The method supports multiple likelihood models (continuous Bernoulli and truncated Gaussian) and uses stochastic gradient Hamiltonian Monte Carlo for scalable posterior inference. The resulting optimized priors yield substantially better reconstructions and generative samples in various benchmarks compared to fixed isotropic priors and state-of-the-art VAE and GAN competitors.
+  </p>
+  <div class="research-links">
+    <a href="https://proceedings.neurips.cc/paper/2021/hash/b7a8e6e382b9e5b8b49e4d9ec04c9c2b-Abstract.html">Paper</a>
+  <a href="#bayesian-neural-networks" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY BNN-3 — figure on the left (Ensemble VI) -->
+<div class="research-entry">
+  <h3>A Variational View on Bootstrap Ensembles as Bayesian Inference</h3>
+  <p>D. Milios, P. Michiardi, and M. Filippone. <em>Preprint</em>, 2020.</p>
+  <div class="research-figure">
+    <img src="/images/research/ensemble_vi_fig.png" alt="Comparison of ensemble-based predictions vs MCMC posterior samples on a regression task">
+  </div>
+  <p>
+    Deep ensemble methods have become a popular practical alternative to Bayesian inference for neural networks, but their theoretical understanding as approximate Bayesian inference remains unclear. This work establishes a principled variational connection by showing that ensemble-based schemes — where each model corresponds to a perturbation of the data and a perturbation of the prior — can be viewed as a form of variational inference. Geometrical conditions are derived under which each optimization step of the ensemble particles reduces their divergence to the true posterior over model parameters; these conditions are free from assumptions on the form of the approximation and hold for Neural Networks with ReLU activations. The theoretical analysis provides insights into when and why ensembles approximate the posterior, and experiments confirm that ensemble methods can produce predictive distributions that match or approach those obtained by MCMC, lending a Bayesian foundation to their empirically observed success.
+  </p>
+  <div class="research-links">
+    <a href="https://arxiv.org/abs/2006.04548">arXiv</a>
+  <a href="#bayesian-neural-networks" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY BNN-3 — figure on the left (WHVI) -->
+<div class="research-entry">
+  <h3>Walsh-Hadamard Variational Inference for Bayesian Deep Learning</h3>
+  <p>S. Rossi, S. Marmin, and M. Filippone. <em>NeurIPS</em>, 2020.</p>
+  <div class="research-figure">
+    <img src="/images/research/whvi_fig.png" alt="Structured covariance of weight matrix induced by Walsh-Hadamard factorization">
+  </div>
+  <p>
+    Variational inference for over-parameterized models such as deep and convolutional neural networks is hampered by the need to parameterize large approximate posterior covariance matrices, which leads to over-regularization and prohibitive memory costs. Inspired by structured approximations of random matrices in the kernel methods literature, this work proposes Walsh-Hadamard Variational Inference (WHVI), which factorises the weight matrices using Walsh-Hadamard transforms to obtain structured, low-parameter covariances. This factorization drastically reduces the number of variational parameters, avoids over-regularization, and allows fast matrix-vector products that accelerate both forward pass and gradient computations. Theoretical analyses establish the expressiveness of the induced posterior family, and extensive experiments on Bayesian DNNs and CNNs demonstrate substantial speedups and model-size reductions compared to competing variational methods, showing that advances in kernel approximations can directly translate into advances in approximate inference for Bayesian deep learning.
+  </p>
+  <div class="research-links">
+    <a href="https://proceedings.neurips.cc/paper/2020/hash/a8e864d04c95572d1aece099af852d0a-Abstract.html">Paper</a>
+  <a href="#bayesian-neural-networks" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY BNN-3 — figure on the left (Good Initializations) -->
+<div class="research-entry">
+  <h3>Good Initializations of Variational Bayes for Deep Models</h3>
+  <p>S. Rossi, P. Michiardi, and M. Filippone. <em>ICML</em>, 2019.</p>
+  <div class="research-figure">
+    <img src="/images/research/bnn_init_fig.png" alt="DGP regression after poor initialization vs proposed initialization">
+  </div>
+  <p>
+    Stochastic variational inference (SVI) is a scalable approach to approximate Bayesian inference for deep models, but its success is highly sensitive to initialization — a problem that has received far less attention than initialization for loss minimization. This work proposes a layer-wise initialization strategy based on iterative Bayesian linear models (I-BLM), which provides a principled warm start for the variational parameters of each layer before jointly optimizing the full deep model. The strategy is computationally cheap, architecture-agnostic, and directly targets the variational objective rather than a proxy. Extensive experiments on regression and classification benchmarks using Bayesian deep networks and convolutional neural networks demonstrate that I-BLM initializations consistently lead to faster convergence and better final performance compared to alternatives inherited from the loss-minimization literature, often rescuing SVI from regions where naive initializations fail to converge even after hundreds of epochs.
+  </p>
+  <div class="research-links">
+    <a href="https://proceedings.mlr.press/v97/rossi19a.html">Paper</a>
+  <a href="#bayesian-neural-networks" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY BNN-3 — figure on the left -->
+<div class="research-entry">
+  <h3>Fully Bayesian Autoencoders with Latent Sparse Gaussian Processes</h3>
+  <p>B.-H. Tran, B. Shahbaba, S. Mandt, and M. Filippone. <em>ICML</em>, 2023.</p>
+  <div class="research-figure">
+    <img src="/images/research/sgpbae_fig1.png" alt="Graphical models of the BAE and SGP-BAE architectures">
+  </div>
+  <p>
+    Standard autoencoders treat the encoder and decoder as deterministic mappings and place no structured prior over the latent space, limiting their ability to model correlations between data points and to quantify uncertainty. This work proposes a fully Bayesian autoencoder (BAE) that places a prior over both the local latent variables and the global decoder parameters, and performs scalable posterior inference via stochastic gradient Hamiltonian Monte Carlo combined with an amortised stochastic inference network for the latent codes. Building on this foundation, the paper introduces the Sparse Gaussian Process Bayesian Autoencoder (SGP-BAE), which replaces the factored latent prior with a sparse GP prior, capturing correlations across data points through a kernel function while keeping complexity tractable via inducing points. The inducing locations and kernel hyperparameters are treated in a fully Bayesian manner, and the framework naturally extends to deep GP priors and missing data. Experiments on dynamic representation learning and generative modeling demonstrate consistent improvements over competing GP-based autoencoder methods.
+  </p>
+  <div class="research-links">
+    <a href="https://proceedings.mlr.press/v202/tran23a.html">Paper</a>
+  <a href="#bayesian-neural-networks" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY BNN-4 — figure on the left -->
+<div class="research-entry">
+  <h3>Bridging GANs and Bayesian Neural Networks via Partial Stochasticity</h3>
+  <p>M. Filippone and M.P. Linhard. <em>Preprint</em>, 2026.</p>
+  <div class="research-figure">
+    <img src="/images/research/gan_bnn_fig1.png" alt="Graphical models of BNNs with full and partial stochasticity and Bayesian GANs">
+  </div>
+  <p>
+    Generative Adversarial Networks (GANs) are powerful generative models, but their optimization is notoriously challenging. This work explains the success and limitations of GANs by recasting them as neural networks with partial stochasticity — a perspective in which all stochasticity is encapsulated in a set of latent variables while the generator network parameters remain deterministic. Under this interpretation, the adversarial training objective emerges as a tractable sample-based proxy for the intractable marginalized likelihood, with the discriminator arising naturally as an accessory to optimization. The framework also yields conditions of universal approximation for GANs and makes the need for regularization of the generator explicit. Building on this understanding, the paper proposes strategies to smooth the loss landscape and to search for solutions with minimum description length, associated with flat minima and better generalization. Extensive experiments show that these strategies lead to consistent performance improvements across various GANs, including state-of-the-art and highly-engineered models.
+  </p>
+  <div class="research-links">
+    <a href="https://arxiv.org/abs/2507.00651">arXiv</a>
+  <a href="#bayesian-neural-networks" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY BNN-5 — figure on the left (Scaling Laws) -->
+<div class="research-entry">
+  <h3>Scaling Laws for Uncertainty in Deep Learning</h3>
+  <p>M. Rosso, S. Rossi, G. Franzese, M. Heinonen, and M. Filippone. <em>Preprint</em>, 2026.</p>
+  <div class="research-figure">
+    <img src="/images/research/scaling_unc_fig.png" alt="Epistemic uncertainty scaling with dataset size for MCMC, MC Dropout, and Deep Ensembles">
+  </div>
+  <p>
+    Scaling laws in deep learning describe how test loss decreases predictably with dataset size, parameter count, or compute. This work asks whether similar laws govern epistemic uncertainty: do Bayesian and ensemble-based uncertainty estimates shrink predictably as data grows? Under a Bayesian framework, identifiable models exhibit an O(1/N) epistemic uncertainty contraction rate with dataset size N, but these guarantees break down for over-parameterized networks. Through large-scale experiments on vision and language tasks — using MCMC, MC Dropout, and Deep Ensembles — the paper shows that in- and out-of-distribution epistemic uncertainties follow clean power-law scaling in both dataset and model size, with method-specific exponents. Beyond the elegance of the finding, the scaling laws provide a practical tool for extrapolating uncertainty estimates to larger regimes. Crucially, the results offer strong empirical evidence against the recurring argument that large datasets make Bayesian inference unnecessary.
+  </p>
+  <div class="research-links">
+    <a href="https://arxiv.org/abs/2506.09648">arXiv</a>
+  <a href="#bayesian-neural-networks" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY BNN-5 — figure on the left (SBNN) -->
+<div class="research-entry">
+  <h3>Spatial Bayesian Neural Networks</h3>
+  <p>A. Zammit-Mangion, M.D. Kaminski, B.-H. Tran, M. Filippone, and N. Cressie. <em>Spatial Statistics</em>, 60, 2024.</p>
+  <div class="research-figure">
+    <img src="/images/research/sbnn_fig.png" alt="Predictive mean and standard deviation maps comparing SBNN-IL to the target spatial process">
+  </div>
+  <p>
+    Classical spatial process models such as Gaussian processes offer interpretability and well-understood inference tools, but struggle to capture the complex heterogeneity found in real environmental and geophysical datasets. This work proposes Spatial Bayesian Neural Networks (SBNNs), a new class of flexible spatial-process models that harness the representational capacity of Bayesian neural networks while being tailored specifically to spatial settings. An SBNN incorporates a spatial embedding layer and, optionally, spatially-varying network parameters, and is calibrated by matching its finite-dimensional distributions to those of a target process of interest. The framework is general enough to represent Gaussian processes, lognormal processes, and max-stable processes, and several SBNN variants are proposed and compared. Inference is carried out with Stochastic-Gradient Hamiltonian Monte Carlo, yielding well-calibrated predictive uncertainty. The approach is validated on simulated and real spatial datasets, demonstrating superior characterization of spatial heterogeneity compared to conventional BNNs of similar complexity.
+  </p>
+  <div class="research-links">
+    <a href="https://doi.org/10.1016/j.spasta.2024.100825">Paper</a>
+  <a href="#bayesian-neural-networks" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<h2 id="deep-gaussian-processes" class="research-section">Deep Gaussian Processes</h2>
+
+<!-- ENTRY DGP-C — figure on the left -->
+<div class="research-entry">
+  <h3>Constraining the Dynamics of Deep Probabilistic Models</h3>
+  <p>M. Lorenzi and M. Filippone. <em>ICML</em>, 2018.</p>
+  <div class="research-figure">
+    <img src="/images/research/dgp_constrained_fig.png" alt="DGP unconstrained vs monotonic regression with derivatives on mortality data">
+  </div>
+  <p>
+    Deep probabilistic models such as Deep Gaussian Processes (DGPs) are highly expressive but unconstrained, making it difficult to incorporate domain knowledge such as monotonicity, boundedness, or adherence to physical laws described by ordinary differential equations (ODEs). This work introduces a principled generative framework for imposing "soft" equality and inequality constraints on the functions and their derivatives of any order. Equality constraints are used to tackle parameter inference in ODE models without repeatedly solving the ODEs, while inequality constraints enable monotonic regression and other shape-constrained problems. A stochastic variational inference scheme provides scalable posterior inference over both model and constraint parameters, yielding accurate uncertainty quantification. The framework applies to DGPs and deep neural networks alike, scales linearly in the number of observations and constraints, and achieves state-of-the-art performance on ODE parameter estimation and count data regression benchmarks.
+  </p>
+  <div class="research-links">
+    <a href="https://proceedings.mlr.press/v80/lorenzi18a.html">Paper</a>
+  <a href="#deep-gaussian-processes" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY 1 — figure on the left -->
+<div class="research-entry">
+  <h3>Random Feature Expansions for Deep Gaussian Processes</h3>
+  <p>K. Cutajar, E.V. Bonilla, P. Michiardi, and M. Filippone. <em>ICML</em>, 2017.</p>
+  <div class="research-figure">
+    <img src="/images/research/dgp_diagram.png" alt="Deep Gaussian Process architecture diagram">
+  </div>
+  <p>
+    Deep Gaussian Processes (DGPs) compose multiple Gaussian processes to build expressive probabilistic models, but existing inference approaches were too slow and cumbersome to scale beyond toy problems. This work introduces a practical learning framework for DGPs based on random feature expansions: each GP layer is approximated by a two-layer weight-space representation, connecting DGPs to Bayesian neural networks with interpretable priors and low-rank weight matrices. The resulting model is trained with stochastic variational inference and mini-batch gradient optimization, making it amenable to GPU and distributed computing. Experiments on datasets with up to 8 million observations and architectures with up to 30 hidden layers show consistent improvements over competing DGP methods in both speed and accuracy, as well as superior uncertainty quantification compared to standard neural networks trained with dropout.
+  </p>
+  <div class="research-links">
+    <a href="https://proceedings.mlr.press/v70/cutajar17a.html">Paper</a>
+    <a href="http://arxiv.org/abs/1610.04386">arXiv</a>
+  <a href="#deep-gaussian-processes" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY 2 — figure on the right -->
+<div class="research-entry">
+  <h3>Deep Gaussian Processes for Calibration of Computer Models</h3>
+  <p>S. Marmin and M. Filippone. <em>Bayesian Analysis</em>, 17(4), 2022.</p>
+  <div class="research-figure">
+    <img src="/images/research/koh_fig1.png" alt="KOH calibration model diagram">
+  </div>
+  <p>
+    Bayesian calibration of computer models — inferring unknown physical parameters by comparing model outputs to real observations — traditionally relies on Gaussian process emulators and MCMC inference, an approach that struggles with scalability and requires careful specification of covariance functions. This work proposes DGP-CAL, a calibration framework that replaces standard GP emulators with Deep Gaussian Processes, inheriting their greater expressiveness, and pairs them with scalable stochastic variational inference built on random feature expansions. The result is a flexible, GPU-friendly calibration method that jointly infers calibration parameters and model discrepancy, scales to large datasets, and produces well-calibrated uncertainty estimates that can be used for adaptive experimental design.
+  </p>
+  <div class="research-links">
+    <a href="https://doi.org/10.1214/21-BA1293">Paper</a>
+  <a href="#deep-gaussian-processes" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY 4 — figure on the left -->
+<div class="research-entry">
+  <h3>Deep Compositional Spatial Models</h3>
+  <p>A. Zammit-Mangion, T.L.J. Ng, Q. Vu, and M. Filippone. <em>Journal of the American Statistical Association</em>, 117(540), 2022.</p>
+  <div class="research-figure">
+    <img src="/images/research/dcsm_fig2.png" alt="RBF warping units applied to a checkered pattern">
+  </div>
+  <p>
+    Spatial processes with nonstationary and anisotropic covariance structure are central to modeling complex environmental phenomena, yet standard approaches using a single warping function are hard to constrain to be injective and prone to undesirable "space-folding." This work proposes a class of deep compositional spatial models where the geographic domain is warped through a composition of multiple injective elemental maps — axial warping units, radial basis function units, and Möbius transformations — whose composition is itself guaranteed to be injective by construction. The model can be treated either as an input-warped Gaussian process (with fixed or estimated weights) or as a deep stochastic process (with random weights), and inference is carried out efficiently via variational Bayes and automatic differentiation, making it suitable for GPU computing. Simulation studies in one and two dimensions demonstrate superior prediction and uncertainty quantification over competing deep stochastic models, and the approach is applied to modeling radiance data from the MODIS instrument aboard the Aqua satellite.
+  </p>
+  <div class="research-links">
+    <a href="https://doi.org/10.1080/01621459.2021.1887741">Paper</a>
+  <a href="#deep-gaussian-processes" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY 3 — figure on the left (back to normal) -->
+<div class="research-entry">
+  <h3>Deep Gaussian Process Autoencoders for Novelty Detection</h3>
+  <p>R. Domingues, P. Michiardi, J. Zouaoui, and M. Filippone. <em>Machine Learning</em>, 107, 2018.</p>
+  <div class="research-figure">
+    <img src="/images/research/dgp_ae_fig5.png" alt="DGP autoencoder latent representations on four datasets">
+  </div>
+  <p>
+    Novelty detection — identifying anomalies in test data that differ significantly from training examples — is a fundamental problem with applications in fraud detection, fault diagnosis, and medical imaging. This work proposes a scalable probabilistic autoencoder based on Deep Gaussian Processes (DGP-AE), where both the encoder and decoder mappings are governed by DGPs. Inference is made tractable through random feature expansions and stochastic variational inference, allowing training on large datasets via mini-batches and GPU computing. The model naturally handles mixed-type data (continuous, binary, categorical, and count features) by choosing appropriate likelihood functions, and its probabilistic nature yields principled uncertainty quantification. Experiments on eleven datasets — including large proprietary datasets from the travel industry — show competitive or superior performance compared to state-of-the-art novelty detection methods, as well as meaningful low-dimensional latent representations comparable to t-SNE.
+  </p>
+  <div class="research-links">
+    <a href="https://doi.org/10.1007/s10994-018-5723-3">Paper</a>
+  <a href="#deep-gaussian-processes" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY 5 — figure on the left -->
+<div class="research-entry">
+  <h3>Calibrating Deep Convolutional Gaussian Processes</h3>
+  <p>G.-L. Tran, E.V. Bonilla, J.P. Cunningham, P. Michiardi, and M. Filippone. <em>AISTATS</em>, 2019.</p>
+  <div class="research-figure">
+    <img src="/images/research/cnn_gp_cal_fig.png" alt="Reliability diagrams for CIFAR10-LENET, CIFAR10-RESNET, and CIFAR100-RESNET comparing CNN+GP(RF) with GPDNN, CGP, SVDKL, CAL, and MCD">
+  </div>
+  <p>
+    Modern Convolutional Neural Networks (CNNs) are widely used for image classification, yet they are known to be poorly calibrated — their predictive probabilities do not accurately reflect the true likelihood of being correct. Prior work combining CNNs with Gaussian processes (GPs) was assumed to address this, but this paper demonstrates that existing CNN-GP hybrids are just as miscalibrated as standard CNNs. To remedy this, our paper proposes a novel combination, CNN+GP(RF), that replaces the fully connected layers of a CNN with a GP approximated via random features, enabling end-to-end learning of convolutional filters alongside a GP readout that is both well-calibrated and achieves state-of-the-art accuracy. Reliability diagrams across CIFAR-10 and CIFAR-100 benchmarks show that CNN+GP(RF) closely tracks perfect calibration, substantially outperforming competing approaches including GPDNN, CGP, SVDKL, CAL, and MC Dropout, while remaining simple to implement on top of standard deep learning architectures.
+  </p>
+  <div class="research-links">
+    <a href="https://proceedings.mlr.press/v89/tran19a.html">Paper</a>
+  <a href="#deep-gaussian-processes" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<h2 id="data-augmentation" class="research-section">Data Augmentation</h2>
+
+<!-- ENTRY DA-1 — figure on the left -->
+<div class="research-entry">
+  <h3>One-Line-of-Code Data Mollification Improves Optimization of Likelihood-based Generative Models</h3>
+  <p>B.-H. Tran, G. Franzese, P. Michiardi, and M. Filippone. <em>NeurIPS</em>, 2023.</p>
+  <div class="research-figure">
+    <img src="/images/research/mollification_fig.png" alt="FID training curves for VAE and GLOW comparing Vanilla, Gaussian mollification, and Blurring augmentation">
+  </div>
+  <p>
+    Likelihood-based generative models such as Variational Autoencoders and Normalizing Flows tend to lag behind score-based Diffusion Models in sample quality, in part because their training objectives struggle in low-density regions and are prone to manifold overfitting. This work borrows a key strength of diffusion models, that is the ability to smooth the data distribution during training: an annealing schedule that begins with an easier, smoothed objective and gradually transitions to the original target. The resulting training strategy requires literally one additional line of code (adding noise or applying blurring to mini-batches during the forward pass), introduces no computational overhead, and consistently improves FID scores and density estimation across VAEs and Glow-style Normalizing flows on real-world image datasets and UCI benchmarks. The results suggest that the benefit long attributed to the multi-scale noising process of diffusion models can be transferred, cheaply, to the broader family of likelihood-based generative models.
+  </p>
+  <div class="research-links">
+    <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/c5b9e8f0c6cdba38fb3c75c2f2c90534-Abstract-Conference.html">Paper</a>
+  <a href="#data-augmentation" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY DA-2 — figure on the left -->
+<div class="research-entry">
+  <h3>Robust Classification by Coupling Data Mollification with Label Smoothing</h3>
+  <p>M. Heinonen, B.-H. Tran, M. Kampffmeyer, and M. Filippone. <em>AISTATS</em>, 2025.</p>
+  <div class="research-figure">
+    <img src="/images/research/diffusion_aug_fig.png" alt="Illustration of input mollification schedule, label smoothing schedule, and resulting Dirichlet predictive distributions across noise levels for a bear image">
+  </div>
+  <p>
+    Standard data augmentation strategies corrupt inputs at training time to improve generalization, but they leave label representations unchanged — even when corruptions destroy meaningful information in the target object, the label remains a one-hot vector. Inspired by the noise schedules of generative diffusion models, this work couples input mollification (progressive noising and blurring) with a matching label smoothing schedule that degrades label confidence in proportion to the degree of input corruption. This joint mollification yields a coherent probabilistic view: at each noise level the model is trained against a Dirichlet-smoothed label, encouraging predicted confidences to track the amount of noise in the input. The approach is simple to implement, adds negligible computational overhead, composes naturally with existing augmentation pipelines, and is motivated through connections to Dirichlet distributions and tempering. Experiments on corrupted image benchmarks — CIFAR-C, TinyImageNet-C, and ImageNet-C — demonstrate improved robustness and better-calibrated uncertainty compared to standalone augmentation baselines.
+  </p>
+  <div class="research-links">
+    <a href="https://arxiv.org/abs/2406.01494">arXiv</a>
+  <a href="#data-augmentation" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY DA-3 — figure on the left -->
+<div class="research-entry">
+  <h3>Optimizing Data Augmentation through Bayesian Model Selection</h3>
+  <p>M. Matymov, B.-H. Tran, M. Kampffmeyer, M. Heinonen, and M. Filippone. <em>ICLR</em>, 2026.</p>
+  <div class="research-figure">
+    <img src="/images/research/bayesian_aug_fig.png" alt="Reliability diagrams comparing No Augmentation (ECE=0.092), Fixed Augmentation (ECE=0.088), and Learned Augmentation (ECE=0.017)">
+  </div>
+  <p>
+    Choosing the right data augmentation strategy — and the right parameters associated with it — is typically left to trial-and-error or expensive validation-based search. This work proposes a principled Bayesian alternative: augmentation parameters are treated as model hyperparameters and selected by maximizing the marginal likelihood. This reframes augmentation selection as a Bayesian model selection problem and yields a tractable Evidence Lower BOund (ELBO) that allows augmentation parameters and model parameters to be optimized jointly during training. The framework provides theoretical guarantees on variational approximation quality, generalization, invariance properties, and connections to empirical Bayes. Reliability diagrams on computer vision and NLP benchmarks show that learned augmentation significantly reduces Expected Calibration Error (ECE), demonstrating that Bayesian model selection offers a rigorous and computationally feasible path to robust machine learning through principled augmentation optimization.
+  </p>
+  <div class="research-links">
+    <a href="https://openreview.net/search?term=Optimizing+Data+Augmentation+through+Bayesian+Model+Selection">Paper</a>
+  <a href="#data-augmentation" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<h2 id="foundation-models" class="research-section">Foundation Models</h2>
+
+<!-- ENTRY FM-1 — figure on the left -->
+<div class="research-entry">
+  <h3>Zero-Shot Model-Based Reinforcement Learning using Large Language Models</h3>
+  <p>A. Benechehab, Y.A. El Hili, A. Odonnat, O. Zekri, A. Thomas, G. Paolo, M. Filippone, I. Redko, and B. Kégl. <em>ICLR</em>, 2025.</p>
+  <div class="research-figure">
+    <img src="/images/research/llm_mbrl_fig.png" alt="DICL framework: trajectory projected via PCA into disentangled components, processed autoregressively by a pre-trained LLM to produce environment predictions">
+  </div>
+  <p>
+    Large Language Models (LLMs) have demonstrated striking zero-shot capabilities across language tasks via in-context learning, but their application to reinforcement learning in continuous state spaces has been limited by two key challenges: handling multivariate trajectory data and incorporating control signals. This work proposes Disentangled In-Context Learning (DICL), a framework that addresses both by first projecting trajectories into a disentangled feature space — using dimensionality reduction such as PCA — then feeding each component independently to a pre-trained LLM for autoregressive prediction, before inverting the projection to recover environment dynamics. No fine-tuning is required: the LLM acts as a zero-shot model by treating the projected trajectory as in-context examples. DICL is validated in two reinforcement learning settings — model-based policy evaluation and data-augmented off-policy learning — and accompanied by theoretical analysis. Experiments on continuous control benchmarks show that the approach produces well-calibrated uncertainty estimates and competitive performance, demonstrating that LLMs can serve as general-purpose dynamics models for RL without any task-specific training.
+  </p>
+  <div class="research-links">
+    <a href="https://openreview.net/forum?id=7f7TtBjjkg">Paper</a>
+    <a href="https://github.com/abenechehab/dicl">Code</a>
+  <a href="#foundation-models" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY FM-2 — figure on the left -->
+<div class="research-entry">
+  <h3>AdaPTS: Adapting Univariate Foundation Models to Probabilistic Multivariate Time Series Forecasting</h3>
+  <p>A. Benechehab, V. Feofanov, G. Paolo, A. Thomas, M. Filippone, and B. Kégl. <em>Preprint</em>, 2025.</p>
+  <div class="research-figure">
+    <img src="/images/research/adapts_fig.png" alt="ETTh1 forecasting showing Moment vs Moment+AdaPTS with uncertainty bands, and the AdaPTS pipeline diagram with feature-space transformation and frozen FM">
+  </div>
+  <p>
+    Pre-trained time series foundation models (FMs) such as Moment or Chronos achieve strong performance on univariate forecasting, but real-world datasets are typically multivariate — combining multiple correlated features — and most FMs produce only point predictions rather than calibrated uncertainty estimates. AdaPTS addresses both limitations through lightweight learned adapters: feature-space transformations that project multivariate inputs into a stochastic latent space, apply a frozen pre-trained univariate FM independently to each component, and then invert the projection to recover probabilistic predictions in the original feature space. Drawing on the literature of partially stochastic neural networks, several adapter architectures and inference strategies are proposed and compared. The approach is modular, adds no parameters to the FM itself, and imposes negligible computational overhead. Experiments on synthetic and real-world benchmarks confirm that AdaPTS substantially improves both forecasting accuracy and uncertainty quantification over baseline methods, demonstrating that adapters are an effective and scalable route to extending univariate foundation models to the probabilistic multivariate setting.
+  </p>
+  <div class="research-links">
+    <a href="https://arxiv.org/abs/2502.10235">arXiv</a>
+    <a href="https://github.com/abenechehab/AdaPTS">Code</a>
+  <a href="#foundation-models" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY FM-3 — figure on the left -->
+<div class="research-entry">
+  <h3>From Data to Rewards: A Bilevel Optimization Perspective on Maximum Likelihood Estimation</h3>
+  <p>A. Benechehab, G. Singer, C. Léger, Y.A. El Hili, G. Paolo, A. Thomas, M. Filippone, and B. Kégl. <em>Preprint</em>, 2025.</p>
+  <div class="research-figure">
+    <img src="/images/research/pg_finetuning_fig.png" alt="Training dynamics across epochs comparing NLL, policy gradient with optimal U*, and policy gradient with identity U showing convergence to the target distribution">
+  </div>
+  <p>
+    Maximum Likelihood Estimation (MLE) is the dominant training paradigm for generative models, but it is increasingly recognized as insufficient for alignment: Policy Gradient (PG) methods driven by explicit reward signals consistently outperform MLE for tasks requiring human-preference alignment or verifiable correctness, at the cost of requiring reward functions that are often unavailable. This work addresses the gap by casting MLE as the outer level of a Bilevel Optimization problem in which the reward function is itself the optimization variable and a PG objective defines the inner level. Theoretical analysis of this formulation in a tractable setting reveals that the optimal reward recovered by the bilevel problem induces PG dynamics that provably converge to the data distribution, whereas standard NLL training does not. The insights extracted from the theory generalize to practical applications — tabular classification and model-based reinforcement learning — where the proposed bilevel approach is shown to improve both convergence speed and final performance over MLE baselines, providing a principled route to reward-free alignment of generative models.
+  </p>
+  <div class="research-links">
+    <a href="https://arxiv.org/abs/2510.07624">arXiv</a>
+    <a href="https://github.com/abenechehab/nll_to_po">Code</a>
+  <a href="#foundation-models" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<h2 id="measuring-dependencies" class="research-section">Measuring Dependencies</h2>
+
+<!-- ENTRY MD-1 — figure on the left -->
+<div class="research-entry">
+  <h3>DIPHINE: Diffusion-based Φ-ID Neural Estimator</h3>
+  <p>S.P. Galeano Muñoz, M. Bounoua, G. Franzese, P. Michiardi, and M. Filippone. <em>Preprint</em>, 2026.</p>
+  <div class="research-figure">
+    <img src="/images/research/dependence_fig.png" alt="Lattice of the 16 ΦID atoms showing redundant, unique, and synergistic information transfer and storage between system components">
+  </div>
+  <p>
+    Understanding how the components of a complex dynamical system store, transfer, and synergistically integrate information is fundamental to neuroscience, physiology, and complex systems analysis. Integrated Information Decomposition (ΦID) provides a principled framework for this: it decomposes the total information flow of a multivariate system into sixteen non-overlapping atoms arranged in a lattice, capturing redundant, unique, and synergistic modes of information storage and transfer simultaneously. However, existing ΦID estimators are restricted to Gaussian or discrete systems, leaving continuous non-Gaussian dynamical systems out of reach. DIPHINE addresses this by introducing the first neural estimator for ΦID: a score-based diffusion model that jointly estimates all mutual information quantities required by the decomposition from a single amortised network, recovering the sixteen atoms via Möbius inversion. Theoretical analysis characterizes error propagation through the inversion and establishes that the Jacobian of the mutual-information-to-atoms mapping is integer-valued. Experiments on synthetic benchmarks demonstrate accurate recovery of ground-truth atoms and superior performance over established mutual information estimators, and an application to real data recovers physiologically interpretable information-dynamic structure without any distributional assumptions.
+  </p>
+  <div class="research-links">
+    <a href="https://arxiv.org/abs/2606.18997">arXiv</a>
+  <a href="#measuring-dependence" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY MD-2 — figure on the left -->
+<div class="research-entry">
+  <h3>TENDE: Transfer Entropy Neural Diffusion Estimation</h3>
+  <p>S.P. Galeano Muñoz, M. Bounoua, G. Franzese, P. Michiardi, and M. Filippone. <em>AISTATS</em>, 2026.</p>
+  <div class="research-figure">
+    <img src="/images/research/tende_fig.png" alt="Transfer entropy estimates for linear Gaussian and joint systems across redundant dimensions, comparing TENDE variants against Agm, Npeet, Mine, Treet, and Tigramite">
+  </div>
+  <p>
+    Transfer entropy (TE) quantifies directed information flow between time series through conditional mutual information, making it a key tool in neuroscience, finance, and complex systems analysis. However, existing TE estimators suffer from the curse of dimensionality, impose restrictive distributional assumptions, or require exponentially large datasets for reliable convergence. TENDE (Transfer Entropy Neural Diffusion Estimation) addresses these limitations by leveraging score-based diffusion models to estimate the relevant conditional distributions, from which transfer entropy is computed without any parametric assumption on the data-generating process. By learning score functions rather than densities directly, TENDE remains flexible and scalable in high dimensions. Benchmarks on linear Gaussian and non-linear joint systems — varying the number of redundant dimensions — show that TENDE consistently tracks the ground truth across conditions where competing estimators (Agm, Npeet, Mine, Treet, Tigramite) degrade or become unreliable, demonstrating superior accuracy and robustness on both synthetic and real data.
+  </p>
+  <div class="research-links">
+    <a href="https://arxiv.org/abs/2510.14096">arXiv</a>
+  <a href="#measuring-dependence" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY MD-3 — figure on the left -->
+<div class="research-entry">
+  <h3>Permutation-based Inference for Variational Learning of Directed Acyclic Graphs</h3>
+  <p>E.V. Bonilla, P. Elinas, H. Zhao, M. Filippone, V. Kitsios, and T. O'Kane. <em>Preprint</em>, 2026.</p>
+  <div class="research-figure">
+    <img src="/images/research/dag_fig.png" alt="Ground truth DAG adjacency matrix alongside inferred edge marginals and edge entropy heatmaps from PIVID">
+  </div>
+  <p>
+    Learning the structure of a Bayesian network as a directed acyclic graph (DAG) from observational data is a central challenge in causal discovery. Bayesian approaches are attractive because they quantify uncertainty over graph structures and naturally handle identifiability, but they face two fundamental obstacles: representing distributions over the super-exponential DAG space and estimating posteriors over that combinatorial space. This work introduces PIVID, which jointly addresses both by placing a variational distribution over permutations — implicitly defining a distribution over DAGs through continuous relaxations of discrete distributions — and optimizing it end-to-end. The permutation-based parameterization respects the acyclicity constraint by construction, scales efficiently with the number of variables, and produces calibrated edge marginals and edge entropy estimates. Experiments on synthetic and real-world datasets show that PIVID outperforms both deterministic and Bayesian structure learning baselines in terms of accuracy-uncertainty trade-offs, offering a principled and scalable route to Bayesian causal discovery.
+  </p>
+  <div class="research-links">
+    <a href="https://arxiv.org/abs/2402.02644">arXiv</a>
+  <a href="#measuring-dependence" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<h2 id="diffusion-models" class="research-section">Diffusion Models</h2>
+
+<!-- ENTRY DM-1 — figure on the left -->
+<div class="research-entry">
+  <h3>Continuous-Time Functional Diffusion Processes</h3>
+  <p>G. Franzese, G. Corallo, S. Rossi, M. Heinonen, M. Filippone, and P. Michiardi. <em>NeurIPS</em>, 2023.</p>
+  <div class="research-figure">
+    <img src="/images/research/func_diffusion_fig.png" alt="High-quality face images generated by Functional Diffusion Processes using a simple MLP architecture">
+  </div>
+  <p>
+    Score-based diffusion models have achieved remarkable generative quality, but their design is tightly coupled to the data domain: noise schedules, network architectures, and sampling procedures must each be tailored to the resolution and modality at hand. This work introduces Functional Diffusion Processes (FDPs), a mathematical framework that lifts score-based diffusion to infinite-dimensional function spaces, enabling a single principled formulation to handle any kind of continuous data. FDPs require new theory — including infinite-dimensional analogues of Girsanov's theorem and the sampling theorem — to derive tractable ELBOs and to guarantee that evaluating a function at a countable set of points is equivalent to specifying an element of the infinite-dimensional space. The resulting generative models operate directly in function space and are compatible with simple general-purpose architectures such as MLPs, without any domain-specific design. Experiments on continuous image generation show that FDPs produce high-quality samples with orders of magnitude fewer parameters than existing pixel-space diffusion models, demonstrating that function-space generalization offers both theoretical elegance and practical efficiency.
+  </p>
+  <div class="research-links">
+    <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/b36e0e64f1be44264b6abfe74a9ec5bf-Abstract-Conference.html">Paper</a>
+  <a href="#diffusion-models" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY DM-2 — figure on the left -->
+<div class="research-entry">
+  <h3>How Much Is Enough? A Study on Diffusion Times in Score-Based Generative Models</h3>
+  <p>G. Franzese, S. Rossi, L. Yang, A. Finamore, D. Rossi, M. Filippone, and P. Michiardi. <em>Entropy</em>, 25, 633, 2023.</p>
+  <div class="research-figure">
+    <img src="/images/research/diffusion_survey_fig.png" alt="Diagram showing three sampling strategies for score-based diffusion models using an auxiliary bridging model ν(x) alongside the score network s_θ">
+  </div>
+  <p>
+    Score-based diffusion models define a forward process that progressively corrupts data into noise over a diffusion time T, and a learned reverse process that recovers data from noise. Current best practice sets T large enough that the forward dynamics bring the data distribution close to a simple Gaussian, but this choice creates a tension: a smaller T is preferable for score-matching accuracy and computational efficiency, while a larger T is needed for the noise approximation to hold. Starting from a variational interpretation of diffusion models, this work quantifies this trade-off theoretically and proposes a practical resolution: an auxiliary bridging model that closes the gap between the ideal and simulated forward dynamics, allowing the reverse process to operate with smaller T without sacrificing quality. The resulting method improves both training and sampling efficiency and is competitive with the state of the art on standard image generation benchmarks in terms of sample quality and log-likelihood.
+  </p>
+  <div class="research-links">
+    <a href="https://doi.org/10.3390/e25040633">Paper</a>
+  <a href="#diffusion-models" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ============================================================
+     SECTION: GAUSSIAN PROCESSES
+     ============================================================ -->
+<h2 id="gaussian-processes" class="research-section">Gaussian Processes</h2>
+
+<!-- ENTRY GP-1 — figure on the left -->
+<div class="research-entry">
+  <h3>ODE Parameter Inference Using Adaptive Gradient Matching with Gaussian Processes</h3>
+  <p>F. Dondelinger, M. Filippone, S. Rogers, and D. Husmeier. <em>AISTATS</em>, 2013.</p>
+  <div class="research-figure">
+    <img src="/images/research/ode_gp_fig.png" alt="First page of ODE parameter inference paper">
+  </div>
+  <p>
+    Inferring the parameters of coupled ordinary differential equations from noisy observations is challenging because standard approaches require costly numerical integration at every inference step. This paper builds on the gradient-matching idea of modeling observed states with a Gaussian process and matching GP-predicted derivatives to the ODE right-hand side, avoiding explicit integration. The key contribution is an adaptive scheme that jointly samples ODE parameters and GP hyperparameters from their posterior, creating an information coupling that dramatically improves robustness to noise compared to earlier fixed-GP approaches.
+  </p>
+  <div class="research-links">
+    <a href="https://proceedings.mlr.press/v31/dondelinger13a.html">Paper</a>
+  <a href="#gaussian-processes" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY GP-2 — figure on the right -->
+<div class="research-entry reverse">
+  <h3>A Comparative Evaluation of Stochastic-Based Inference Methods for Gaussian Process Models</h3>
+  <p>M. Filippone, M. Zhong, and M. Girolami. <em>Machine Learning</em>, 93:93–114, 2013.</p>
+  <div class="research-figure">
+    <img src="/images/research/gp_inference_eval_fig.png" alt="First page of comparative evaluation of stochastic inference for GPs paper">
+  </div>
+  <p>
+    Fully Bayesian treatment of Gaussian process models requires integrating over the covariance hyperparameters, which is analytically intractable. This paper provides a rigorous empirical comparison of several MCMC-based strategies for doing so, examining the interplay between efficient parameterizations and proposal mechanisms. The study benchmarks convergence speed, sampling efficiency, and computational cost on synthetic and real datasets, offering practical guidance on when each strategy is preferable for various GP models.
+  </p>
+  <div class="research-links">
+    <a href="https://doi.org/10.1007/s10994-013-5388-x">Paper</a>
+  <a href="#gaussian-processes" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY GP-3 — figure on the left -->
+<div class="research-entry">
+  <h3>Pseudo-Marginal Bayesian Inference for Gaussian Processes</h3>
+  <p>M. Filippone and M. Girolami. <em>IEEE Trans. Pattern Analysis and Machine Intelligence</em>, 36(11):2214–2228, 2014.</p>
+  <div class="research-figure">
+    <img src="/images/research/pseudo_marginal_gp_fig.png" alt="First page of Pseudo-Marginal Bayesian Inference for Gaussian Processes paper">
+  </div>
+  <p>
+    This paper addresses two fundamental challenges in Bayesian GP modeling: exact inference over covariance hyperparameters and accurate out-of-sample predictive uncertainty. The proposed methodology replaces the analytically intractable marginal likelihood with an importance-sampling estimate within a pseudo-marginal MCMC approach, enabling targeting exact Bayesian inference. Using GP probit regression as a running example, the paper demonstrates that integrating over all model parameters yields superior uncertainty quantification compared to point-estimate or Laplace-based alternatives.
+  </p>
+  <div class="research-links">
+    <a href="https://doi.org/10.1109/TPAMI.2014.2316530">Paper</a>
+  <a href="#gaussian-processes" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY GP-4 — figure on the right -->
+<div class="research-entry reverse">
+  <h3>Bayesian Inference for Gaussian Process Classifiers with Annealing and Pseudo-Marginal MCMC</h3>
+  <p>M. Filippone. <em>ICPR</em>, 2014.</p>
+  <div class="research-figure">
+    <img src="/images/research/gp_annealing_fig.png" alt="First page of Bayesian Inference for GP Classifiers with Annealing paper">
+  </div>
+  <p>
+    Importance sampling estimates of the marginal likelihood in pseudo-marginal MCMC can suffer from high variance, particularly in large classification problems where the integrand is high-dimensional and non-Gaussian. This paper proposes replacing standard importance sampling with annealed importance sampling (AIS), which constructs a sequence of bridging distributions that reduces variance exponentially in the number of data points at only polynomial additional cost. Empirical comparisons on five datasets demonstrate that the AIS-based approach is a significant step toward fully automated exact Bayesian inference for GP classifiers.
+  </p>
+  <div class="research-links">
+    <a href="https://doi.org/10.1109/ICPR.2014.116">Paper</a>
+  <a href="#gaussian-processes" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY GP-5 — figure on the left -->
+<div class="research-entry">
+  <h3>Pseudo-Marginal Bayesian Multiple-Class Multiple-Kernel Learning for Neuroimaging Data</h3>
+  <p>A. D. O'Harney, A. Marquand, K. Rubia, K. Chantiluke, A. Smith, A. Cubillo, C. Blain, and M. Filippone. <em>ICPR</em>, 2014.</p>
+  <div class="research-figure">
+    <img src="/images/research/mc_mkl_fig.png" alt="First page of Pseudo-Marginal Bayesian Multiple-Class Multiple-Kernel Learning paper">
+  </div>
+  <p>
+    Clinical neuroimaging often requires integrating multiple imaging modalities and classifying subjects into more than two disease states. This paper extends pseudo-marginal MCMC to the multiple-class, multiple-kernel learning (MC-MKL) setting, placing a GP prior over combinations of kernels representing different imaging sources and using unbiased marginal-likelihood estimates to infer kernel weights with full uncertainty quantification. Experiments on synthetic and real neuroimaging data show that the approach accurately recovers kernel importances and provides reliable classification uncertainty.
+  </p>
+  <div class="research-links">
+    <a href="https://doi.org/10.1109/ICPR.2014.549">Paper</a>
+  <a href="#gaussian-processes" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY GP-6 — figure on the right -->
+<div class="research-entry reverse">
+  <h3>MCMC for Variationally Sparse Gaussian Processes</h3>
+  <p>J. Hensman, A. G. de G. Matthews, M. Filippone, and Z. Ghahramani. <em>NeurIPS</em>, 2015.</p>
+  <div class="research-figure">
+    <img src="/images/research/mcmc_sparse_gp_fig.png" alt="First page of MCMC for Variationally Sparse Gaussian Processes paper">
+  </div>
+  <p>
+    Variational sparse GP methods typically optimize inducing locations and covariance hyperparameters by maximizing a lower bound of the marginal likelihood obtained by integrating out inducing variables. This paper combines variational sparse approximations with Hybrid Monte Carlo to sample coviariance hyperparameters together with inducing variables. The result is a scalable, non-Gaussian posterior approximation that simultaneously handles large datasets, non-Gaussian likelihoods, and fully Bayesian hyperparameter inference within a single coherent framework.
+  </p>
+  <div class="research-links">
+    <a href="https://proceedings.neurips.cc/paper/2015/hash/6b180037abbebea991d8b1232f8a8ca9-Abstract.html">Paper</a>
+  <a href="#gaussian-processes" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY GP-7 — figure on the left -->
+<div class="research-entry">
+  <h3>Enabling Scalable Stochastic Gradient-Based Inference for Gaussian Processes via ULISSE</h3>
+  <p>M. Filippone and R. Engler. <em>ICML</em>, 2015.</p>
+  <div class="research-figure">
+    <img src="/images/research/ulisse_fig.png" alt="First page of ULISSE paper on scalable stochastic gradient inference for GPs">
+  </div>
+  <p>
+    Stochastic gradient Langevin dynamics offers an attractive route to scalable exact Bayesian inference over GP covariance parameters, but computing marginal likelihood gradients still requires solving large linear systems at every step. This paper introduces ULISSE (Unbiased LInear System SolvEr), based on parallelizable covariance matrix-vector products, which provides stochastic gradients with negligible bias without Cholesky decompositions. Applied to GP regression, ULISSE enables scalable and asymptotically exact quantification of uncertainty over covariance parameters without imposing special kernel structure or reducing the input set.
+  </p>
+  <div class="research-links">
+    <a href="https://proceedings.mlr.press/v37/filippone15.html">Paper</a>
+  <a href="#gaussian-processes" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY GP-8 — figure on the right -->
+<div class="research-entry reverse">
+  <h3>Preconditioning Kernel Matrices</h3>
+  <p>K. Cutajar, M. A. Osborne, J. P. Cunningham, and M. Filippone. <em>ICML</em>, 2016.</p>
+  <div class="research-figure">
+    <img src="/images/research/preconditioning_kernel_fig.png" alt="First page of Preconditioning Kernel Matrices paper">
+  </div>
+  <p>
+    Conjugate gradient methods allow GP inference without storing or factorizing the kernel matrix, but the poor conditioning of kernel matrices leads to slow convergence in practice. This paper develops a broad family of preconditioners specifically tailored to kernel matrices that dramatically improve conjugate gradient convergence, enabling scalable and accurate GP inference and hyperparameter learning within a fixed computational budget. The approach is shown to outperform state-of-the-art sparse approximations while remaining exact in the limit of iterations.
+  </p>
+  <div class="research-links">
+    <a href="https://proceedings.mlr.press/v48/cutajar16.html">Paper</a>
+  <a href="#gaussian-processes" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY GP-9 — figure on the left -->
+<div class="research-entry">
+  <h3>Fast Inference in Nonlinear Dynamical Systems Using Gradient Matching</h3>
+  <p>M. Niu, S. Rogers, M. Filippone, and D. Husmeier. <em>ICML</em>, 2016.</p>
+  <div class="research-figure">
+    <img src="/images/research/gradient_matching_fig.png" alt="First page of Fast Inference in Nonlinear Dynamical Systems paper">
+  </div>
+  <p>
+    This paper proposes a new approach to ODE parameter inference combining kernel ridge regression for state interpolation with a gradient-matching objective that simultaneously encourages data fit and penalizes inconsistencies with the differential equations. An EM-style iterative algorithm exploits partial convexity for fast minimization. Unlike purely GP-based gradient matching, the kernel ridge regression surrogate avoids sensitivity to hyperparameter choice, and benchmarks on several systems show the method compares favorably to state-of-the-art alternatives in both accuracy and computational speed.
+  </p>
+  <div class="research-links">
+    <a href="https://proceedings.mlr.press/v48/niu16.html">Paper</a>
+  <a href="#gaussian-processes" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY GP-10 — figure on the right -->
+<div class="research-entry reverse">
+  <h3>AutoGP: Exploring the Capabilities and Limitations of Gaussian Process Models</h3>
+  <p>K. Krauth, E. V. Bonilla, K. Cutajar, and M. Filippone. <em>UAI</em>, 2017.</p>
+  <div class="research-figure">
+    <img src="/images/research/autogp_fig.png" alt="First page of AutoGP paper">
+  </div>
+  <p>
+    AutoGP jointly addresses three axes that have limited GP models: scalability via inducing-point inference, flexibility via compositional multi-scale kernels, and well-targeted training objectives beyond the marginal likelihood. The unified framework outperforms all previously reported GP results on MNIST, matches kernel methods on RECTANGLES-IMAGE, and breaks the 1% error barrier on MNIST8M at unprecedented GP scale (8 million observations), demonstrating that GPs can bridge the gap with deep learning on large classification benchmarks.
+  </p>
+  <div class="research-links">
+    <a href="https://www.auai.org/uai2017/proceedings/papers/50.pdf">Paper</a>
+  <a href="#gaussian-processes" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY GP-11 — figure on the left -->
+<div class="research-entry">
+  <h3>Dirichlet-Based Gaussian Processes for Large-Scale Calibrated Classification</h3>
+  <p>D. Milios, R. Camoriano, P. Michiardi, L. Rosasco, and M. Filippone. <em>NeurIPS</em>, 2018.</p>
+  <div class="research-figure">
+    <img src="/images/research/dirichlet_gp_fig.png" alt="First page of Dirichlet-based Gaussian Processes paper">
+  </div>
+  <p>
+    GP classification is principled but computationally heavy; GP regression is fast but its outputs are not naturally calibrated probabilities. This paper bridges this gap by reinterpreting multi-class labels as coefficients of a degenerate Dirichlet distribution, allowing standard GP regression to be applied directly to classification after a simple label transformation. The resulting Dirichlet-based GP classifier achieves essentially the same accuracy and uncertainty calibration as full GP classification while requiring only a fraction of the computational resources, making large-scale calibrated classification practical.
+  </p>
+  <div class="research-links">
+    <a href="https://papers.nips.cc/paper_files/paper/2018/hash/b6617980ce90f637e68c3ebe8b9be745-Abstract.html">Paper</a>
+  <a href="#gaussian-processes" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY GP-12 — figure on the right -->
+<div class="research-entry reverse">
+  <h3>Exact Gaussian Process Regression with Distributed Computations</h3>
+  <p>D.-T. Nguyen, M. Filippone, and P. Michiardi. <em>ACM SAC</em>, 2019.</p>
+  <div class="research-figure">
+    <img src="/images/research/exact_gp_distributed_fig.png" alt="First page of Exact Gaussian Process Regression with Distributed Computations paper">
+  </div>
+  <p>
+    Exact GP inference scales cubically in data size, restricting its use to small datasets. This paper designs a distributed method achieving true model parallelism for exact GP regression using high-level distributed computing primitives, with distributed in-memory covariance representations and efficient linear algebra. Experiments show that exact distributed GP inference is not only feasible at scale but also delivers lower error rates and more accurate uncertainty quantification than approximate sparse methods, demonstrating that approximation is not necessary when distributed resources are available.
+  </p>
+  <div class="research-links">
+    <a href="https://doi.org/10.1145/3297280.3297409">Paper</a>
+  <a href="#gaussian-processes" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY GP-13 — figure on the left -->
+<div class="research-entry">
+  <h3>Sparse Gaussian Processes Revisited: Bayesian Approaches to Inducing-Variable Approximations</h3>
+  <p>S. Rossi, M. Heinonen, E. V. Bonilla, Z. Shen, and M. Filippone. <em>AISTATS</em>, 2021.</p>
+  <div class="research-figure">
+    <img src="/images/research/sparse_gp_revisited_fig.png" alt="First page of Sparse Gaussian Processes Revisited paper">
+  </div>
+  <p>
+    Variational sparse GP methods conventionally optimize inducing point locations jointly with other hyperparameters. This paper revisits this choice, arguing that placing a Bayesian prior over inducing inputs and jointly sampling them with covariance hyperparameters via stochastic gradient HMC yields significant performance improvements. The method is validated across numerous regression and classification benchmarks and scales to both shallow and deep GP models, reviving a Bayesian perspective on inducing-variable approximations that had been largely abandoned in practice.
+  </p>
+  <div class="research-links">
+    <a href="https://proceedings.mlr.press/v130/rossi21a.html">Paper</a>
+  <a href="#gaussian-processes" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY GP-14 — figure on the right -->
+<div class="research-entry reverse">
+  <h3>Sparse within Sparse Gaussian Processes Using Neighbor Information</h3>
+  <p>G.-L. Tran, D. Milios, P. Michiardi, and M. Filippone. <em>ICML</em>, 2021.</p>
+  <div class="research-figure">
+    <img src="/images/research/swsgp_fig.png" alt="First page of Sparse within Sparse Gaussian Processes paper">
+  </div>
+  <p>
+    Sparse GP methods incur O(M³) complexity in the number of inducing points M, limiting how many can be used. This paper introduces Sparse within Sparse GPs (SWSGP), which imposes a hierarchical sparsity-inducing prior over M inducing variables and at training time activates only the H nearest inducing inputs per mini-batch (H ≪ M). The variational objective remains tractable and mini-batch optimizable, enabling a far larger effective inducing set at substantially lower computational cost, with strong empirical gains across regression and classification tasks.
+  </p>
+  <div class="research-links">
+    <a href="https://proceedings.mlr.press/v139/tran21a.html">Paper</a>
+  <a href="#gaussian-processes" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY GP-15 — figure on the left -->
+<div class="research-entry">
+  <h3>Gaussian Processes with Bayesian Inference of Covariate Couplings</h3>
+  <p>M. Rosso, J. Ylä-Jääski, Z. Shen, M. Heinonen, and M. Filippone. <em>Transactions on Machine Learning Research</em>, 2025.</p>
+  <div class="research-figure">
+    <img src="/images/research/gp_covariate_coupling_fig.png" alt="First page of Gaussian Processes with Bayesian Inference of Covariate Couplings paper">
+  </div>
+  <p>
+    Standard ARD kernels assign independent length-scales to each input dimension but cannot capture dependencies between covariates. This paper replaces the diagonal ARD precision with a full precision matrix Λ in Mahalanobis distance-based covariances (Automatic Coupling Determination, ACD), enabling the kernel to uncover covariate couplings for enhanced interpretability. A range of structured priors—from Wishart to Horseshoe—are placed on Λ or its elements, and inferred via fully Bayesian sparse GP methods, providing principled uncertainty over the strength of covariate interactions.
+  </p>
+  <div class="research-links">
+    <a href="https://openreview.net/forum?id=fameEAljo3">Paper</a>
+  <a href="#gaussian-processes" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<h2 id="neuroscience" class="research-section">Neuroscience Applications</h2>
+
+<!-- ENTRY NEURO-1 — figure on the left -->
+<div class="research-entry">
+  <h3>Automated, High Accuracy Classification of Parkinsonian Disorders: A Pattern Recognition Approach</h3>
+  <p>A.F. Marquand, M. Filippone, J. Ashburner, M. Girolami, J. Mourao-Miranda, G.J. Barker, S.C.R. Williams, P.N. Leigh, and C.R.V. Blain. <em>PLOS ONE</em>, 8(7), 2013.</p>
+  <div class="research-figure">
+    <img src="/images/research/parkinson_classification.png" alt="First page of Parkinsonian Disorders Classification paper">
+  </div>
+  <p>
+    Progressive supranuclear palsy (PSP), multiple system atrophy (MSA), and idiopathic Parkinson's disease (IPD) are clinically difficult to distinguish in the early stages despite distinct patterns of molecular pathology. This work applies multi-class probabilistic classification to structural MRI to simultaneously discriminate all three disorders and healthy controls. Anatomical patterns from a subcortical motor network, individual component regions, and the whole brain are evaluated. The midbrain/brainstem emerges as the most discriminative region overall, enabling high-accuracy automated classification of all disease groups — a capability not previously demonstrated with fully automated methods.
+  </p>
+  <div class="research-links">
+    <a href="https://doi.org/10.1371/journal.pone.0069237">Paper</a>
+  <a href="#neuroscience" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY NEURO-2 — figure on the right -->
+<div class="research-entry reverse">
+  <h3>Decoding Post-Stroke Motor Function from Structural Brain Imaging</h3>
+  <p>J.M. Rondina, M. Filippone, M. Girolami, and N.S. Ward. <em>NeuroImage: Clinical</em>, 12, 2016.</p>
+  <div class="research-figure">
+    <img src="/images/research/stroke_motor.png" alt="First page of Decoding Post-Stroke Motor Function paper">
+  </div>
+  <p>
+    Predicting long-term motor recovery after stroke is an important clinical challenge. This paper develops probabilistic regression based on Gaussian processes to decode motor outcomes in 50 chronic stroke patients from structural MRI data alone. Two complementary feature extraction strategies are compared: lesion load per anatomical region versus voxel-level lesion probability patterns. Across multiple ways to define anatomical regions — atlases, corticospinal tract, fMRI-derived motor masks, and lesion-symptom mapping — voxel-level lesion probability features consistently outperform lesion load, with the best performance achieved by combining cortical, subcortical, and corticospinal tract regions.
+  </p>
+  <div class="research-links">
+    <a href="https://doi.org/10.1016/j.nicl.2016.07.014">Paper</a>
+  <a href="#neuroscience" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY NEURO-3 — figure on the left -->
+<div class="research-entry">
+  <h3>In-Silico Model of the Natural History of Alzheimer's Disease Based on Serial Acquisitions of MR, AV45 and FDG PET Scans</h3>
+  <p>M. Lorenzi, M. Filippone, A. Rolfo, S. Bianchetti, D.C. Alexander, S. Ourselin, and G.B. Frisoni. <em>Alzheimer's & Dementia</em>, 13(7), 2017.</p>
+  <div class="research-figure">
+    <img src="/images/research/alzheimer_insilico.png" alt="First page of In-Silico Alzheimer's Disease Model abstract">
+  </div>
+  <p>
+    Understanding the temporal dynamics of neurodegeneration in Alzheimer's disease (AD) requires integrating multimodal imaging data spanning the full disease course. This work develops a 3D high-resolution computational in-silico model of the spatio-temporal brain changes in AD, built from joint analysis of longitudinal T1 MRI, FDG-PET, and AV45-PET images from 431 amyloid-positive ADNI individuals. The estimated disease progression spans roughly 20 years: amyloid deposition in parietal and temporal regions reaches a plateau around year 10, posterior hypometabolism appears at year 5 and progressively spreads, and hippocampal and temporal atrophy emerges approximately 10 years after the initial amyloid deposition — consistent with classical hypothetical models of AD progression.
+  </p>
+  <div class="research-links">
+    <a href="https://alz-journals.onlinelibrary.wiley.com/doi/pdf/10.1016/j.jalz.2017.07.690">Paper</a>
+    <a href="#neuroscience" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY NEURO-4 — figure on the right -->
+<div class="research-entry reverse">
+  <h3>Modeling and Prediction of the Natural History of Neurodegeneration from Longitudinal Trial Data</h3>
+  <p>M. Lorenzi, M. Filippone, D.C. Alexander, and S. Ourselin. <em>Alzheimer's & Dementia</em>, 13(7), 2017.</p>
+  <div class="research-figure">
+    <img src="/images/research/alzheimer_progression.png" alt="First page of Natural History of Neurodegeneration abstract">
+  </div>
+  <p>
+    Clinical datasets on neurodegenerative diseases lack a well-defined temporal reference, since the onset of pathology varies across individuals. This work proposes data-driven probabilistic regression and time reparameterization for estimating and predicting the natural history of neurodegeneration from longitudinal trial data, accounting for different biomarkers, missing measurements, and unknown disease staging. Applied to 154 ADNI individuals across normal, mild cognitive impairment, and Alzheimer's patient groups, the model achieves a discrimination accuracy of 0.84 for MCI converters versus stable subjects, enabling probabilistic disease staging in unseen patients.
+  </p>
+  <div class="research-links">
+    <a href="https://alz-journals.onlinelibrary.wiley.com/doi/pdfdirect/10.1016/j.jalz.2017.07.103">Paper</a>
+    <a href="#neuroscience" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY NEURO-5 — figure on the left -->
+<div class="research-entry">
+  <h3>Probabilistic Disease Progression Modeling to Characterize Diagnostic Uncertainty: Application to Staging and Prediction in Alzheimer's Disease</h3>
+  <p>M. Lorenzi, M. Filippone, G.B. Frisoni, D.C. Alexander, and S. Ourselin. <em>NeuroImage</em>, 190, 2019.</p>
+  <div class="research-figure">
+    <img src="/images/research/alzheimer_dpm.png" alt="First page of Probabilistic Disease Progression Modeling paper">
+  </div>
+  <p>
+    Disease progression modeling (DPM) of Alzheimer's disease aims to reveal long-term pathological trajectories from short-term clinical data. This work reformulates DPM within a probabilistic Bayesian Gaussian process framework, introducing individual time reparameterization and monotonicity constraints to model the natural evolution of multimodal biomarkers from normal to pathological stages. Applied to 582 amyloid-positive ADNI individuals, the model achieves high face validity with clinical diagnosis. Follow-up measurements substantially reduce prediction uncertainty, and the transition from normal to pathological stages is primarily associated with brain hypometabolism, temporal atrophy, and worsening of clinical scores — providing a principled instrument for probabilistic patient staging in clinical trials.
+  </p>
+  <div class="research-links">
+    <a href="https://doi.org/10.1016/j.neuroimage.2017.08.059">Paper</a>
+  <a href="#neuroscience" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<h2 id="novelty-detection" class="research-section">Novelty Detection</h2>
+
+<!-- ENTRY NOV-1 — figure on the left -->
+<div class="research-entry">
+  <h3>Information Theoretic Novelty Detection</h3>
+  <p>M. Filippone and G. Sanguinetti. <em>Pattern Recognition</em>, 43(3), 2010.</p>
+  <div class="research-figure">
+    <img src="/images/research/info_theoretic_novelty.png" alt="First page of Information Theoretic Novelty Detection paper">
+  </div>
+  <p>
+    Novelty detection with small training sets is challenging because density estimates carry high variability, making false positive rate control unreliable. This work reframes novelty detection through information theory: the novelty score for a new point is its information content, measured as the KL divergence between the density estimated without and with that point. For Gaussian distributions this is analytically tractable and closely related to classical F-tests, yielding exact false positive rate control regardless of training set size. An efficient Monte Carlo approximation extends the approach to mixtures of Gaussians, maintaining accurate false positive control while achieving competitive detection accuracy on synthetic and real benchmark datasets.
+  </p>
+  <div class="research-links">
+    <a href="https://doi.org/10.1016/j.patcog.2009.07.002">Paper</a>
+  <a href="#novelty-detection" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY NOV-2 — figure on the right -->
+<div class="research-entry reverse">
+  <h3>A Perturbative Approach to Novelty Detection in Autoregressive Models</h3>
+  <p>M. Filippone and G. Sanguinetti. <em>IEEE Transactions on Signal Processing</em>, 59(3), 2011.</p>
+  <div class="research-figure">
+    <img src="/images/research/novelty_autoregressive.png" alt="First page of Perturbative Novelty Detection in Autoregressive Models paper">
+  </div>
+  <p>
+    Detecting novelties in time series governed by linear autoregressive models requires accounting for the temporal structure of the data. This paper derives a novelty detection test for stationary AR models with Gaussian noise by applying a perturbative expansion of the information content of a new observation. The leading term recovers the classical F-test, while the O(1/n) correction term substantially tightens control over the false positive rate on finite samples. The method is validated on synthetic AR data and on real environmental and financial time series, demonstrating reliable detection of exceptional events with accurate false alarm control.
+  </p>
+  <div class="research-links">
+    <a href="https://doi.org/10.1109/TSP.2010.2094609">Paper</a>
+  <a href="#novelty-detection" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY NOV-3 — figure on the left -->
+<div class="research-entry">
+  <h3>A Comparative Evaluation of Outlier Detection Algorithms: Experiments and Analyses</h3>
+  <p>R. Domingues, M. Filippone, P. Michiardi, and J. Zouaoui. <em>Pattern Recognition</em>, 74, 2018.</p>
+  <div class="research-figure">
+    <img src="/images/research/outlier_comparison.png" alt="First page of Comparative Evaluation of Outlier Detection Algorithms paper">
+  </div>
+  <p>
+    Outlier detection underpins fraud detection, intrusion detection, medical diagnosis, and data cleaning, yet existing benchmarks are limited in scope and rarely test generalization to unseen data. This paper provides a systematic evaluation of unsupervised outlier detection algorithms — spanning probabilistic, distance-based, neural, information-theoretic, and isolation-based methods — on 12 publicly available labeled datasets and 3 novel industrial datasets from the travel industry. Every method is assessed not only on detection accuracy but also on scalability, memory consumption, and robustness to increasing background noise, offering a comprehensive guide for practitioners selecting algorithms for real-world deployments.
+  </p>
+  <div class="research-links">
+    <a href="https://doi.org/10.1016/j.patcog.2017.09.037">Paper</a>
+  <a href="#novelty-detection" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>
+
+<!-- ENTRY NOV-4 — figure on the right -->
+<div class="research-entry reverse">
+  <h3>A Comparative Evaluation of Novelty Detection Algorithms for Discrete Sequences</h3>
+  <p>R. Domingues, P. Michiardi, J. Barlet, and M. Filippone. <em>Artificial Intelligence Review</em>, 53, 2020.</p>
+  <div class="research-figure">
+    <img src="/images/research/novelty_sequences.png" alt="First page of Comparative Evaluation of Novelty Detection for Discrete Sequences paper">
+  </div>
+  <p>
+    Anomaly detection in discrete sequences — temporal data composed of ordered categorical events — is central to intrusion detection, fraud prevention, genomics, and fault diagnosis, yet no systematic benchmark existed for this setting. This paper evaluates 12 novelty detection algorithms on 81 datasets spanning public benchmarks and novel industrial datasets, covering both change-point detection in long sequences and multi-sequence classification. In addition to detection accuracy on clean and outlier-contaminated data, the study reports scalability and memory usage, providing concrete selection criteria for practitioners facing large-volume or resource-constrained deployments.
+  </p>
+  <div class="research-links">
+    <a href="https://doi.org/10.1007/s10462-019-09779-4">Paper</a>
+  <a href="#novelty-detection" title="Back to section">↑ Section</a>
+  <a href="#top" title="Back to top">↑ Top</a>
+  </div>
+</div>

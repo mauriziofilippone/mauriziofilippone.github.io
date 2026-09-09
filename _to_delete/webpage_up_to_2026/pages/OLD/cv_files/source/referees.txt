@@ -1,0 +1,47 @@
+Guido Sanguinetti
+Lecturer - Department of Computer Science and Department of Chemical and Process Engineering - University of Sheffield
+Regent Court
+211 Portobello Street
+S1 4DP, Sheffield, United Kingdom
+Phone: 0044 114 222 1912
+Fax: 0044 114 222 1810
+email: g.sanguinetti@dcs.shef.ac.uk
+
+Daniel Barbará
+Full Professor - Department of Computer Science - George Mason University
+4400 University Drive
+Fairfax, VA 22030 - USA
+Phone: 001 703 993 1627
+Fax: 001 703 993 1638
+email: dbarbara@gmu.edu
+
+Carlotta Domeniconi
+Associate Professor - Department of Computer Science - George Mason University
+4400 University Drive
+Fairfax, VA 22030 - USA
+Phone: 001 703 993 1697
+Fax: 001 703 993 1710 
+email: carlotta@cs.gmu.edu
+
+Francesco Masulli
+Associate Professor - Department of Computer and Information Sciences - University of Genova
+Via Dodecaneso, 35
+16146 Genova - Italy
+Phone: 0039 010 353 6604
+Fax: 0039 010 353 6699 
+email: masulli@disi.unige.it
+
+Stefano Rovetta
+Assistant Professor - Department of Computer and Information Sciences - University of Genova
+Via Dodecaneso, 35
+16146 Genova - Italy
+Phone: 0039 010 353 6636
+Fax: 0039 010 353 6699 
+email: ste@disi.unige.it
+
+Francesco Camastra
+Assistant Professor - Department of Applied Science - University of Napoli Parthenope
+Centro Direzionale, ISOLA C4
+80143 Napoli - Italy
+Phone: 0039 081 547 6505  
+email: francesco.camastra@uniparthenope.it
