@@ -158,7 +158,11 @@ I am an Associate Professor of Statistics at [KAUST](https://www.kaust.edu.sa/),
         }
       });
 
-      if (!papers.length) return;
+      if (!papers.length) {
+        document.getElementById('highlight-card').innerHTML =
+          '<div class="highlight-body"><p style="opacity:0.6;font-size:0.85rem">⚠ Highlight unavailable (nodes found: ' + nodes.length + ')</p></div>';
+        return;
+      }
 
       // Deterministic daily pick: day-of-year % N
       var now   = new Date();
