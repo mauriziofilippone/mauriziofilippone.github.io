@@ -31,7 +31,7 @@ author_profile: true
 
 ### Interns
 
-- **Serigne Khadim Sarr** (2026)
+- **Andrea Scappaticci La Pietra** (2026)
 
 
 ## Alumni
@@ -65,6 +65,7 @@ author_profile: true
 
 ### Interns
 
+- **Serigne Khadim Sarr** (2026)
 - **Mohamed Elashmouney** (2026)
 - **Arthur Henninger** (2026)
 - **Marius P. Linhard** (2025)
