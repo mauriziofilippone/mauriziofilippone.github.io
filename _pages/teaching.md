@@ -7,16 +7,17 @@ author_profile: true
 ## KAUST 
 
 - **Bayesian Deep Learning** (STAT 301 - PhD) - 2024-present
-- **Bayesian Statistics** (STAT 240 - MSc) - 2025
+- **Machine Learning** (CS 229 - MS) - 2027
+- **Bayesian Statistics** (STAT 240 - MS) - 2025
 
 ## KAUST Academy 
 
-- **Generative Modeling** (CS 283P - MSc) - 2026
+- **Generative Modeling** (CS 283P - MS) - 2026
 
 
 ## EURECOM
 
-- **Advanced Statistical Inference** (MSc) - 2015–2024
+- **Advanced Statistical Inference** (MS) - 2015–2024
 
 ## University of Glasgow
 
